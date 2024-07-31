@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.order.ConfirmOrderFragment">
+    <RelativeLayout
+        android:id="@+id/layoutManageOrdering"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?android:attr/actionBarSize"
+        android:orientation="vertical">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutBottomNavigate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_navigation_height_size"
+        android:layout_gravity="bottom"
+        android:background="@color/colorWhiteApp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/all_line_split_super_slim"
+            android:background="@color/colorGrayAppLight"
+            android:layout_alignParentTop="true"/>
+        <Button
+            android:id="@+id/btnSendOrder"
+            style="@style/ContainedButtonPrimary"
+            android:backgroundTint="@color/colorVioletPrimary"
+            android:layout_marginLeft="@dimen/all_margin_short"
+            android:layout_marginRight="@dimen/all_margin_short"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:text="@string/choose_food_send_order"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layoutLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+        <com.wang.avi.AVLoadingIndicatorView
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="@dimen/all_loading_size"
+            android:layout_height="@dimen/all_loading_size"
+            android:layout_centerInParent="true"
+            app:indicatorColor="@color/colorTextSecondary"
+            app:indicatorName="BallSpinFadeLoaderIndicator" />
+    </RelativeLayout>
+</FrameLayout>

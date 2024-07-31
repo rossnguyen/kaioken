@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_background_0_radius_masterial4_border_gray_top_bottom">
+
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="@dimen/item_choose_food_avatar_size"
+        android:layout_height="@dimen/item_choose_food_avatar_size"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/all_margin_long"
+        android:scaleType="centerCrop"
+        android:src="@drawable/place_holder_4" />
+
+    <RelativeLayout
+        android:id="@+id/layoutInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/all_margin_short"
+        android:layout_toEndOf="@id/imgAvatar">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/all_margin_short"
+            android:fontFamily="@font/cabin"
+            android:textColor="@color/colorTextPrimary" />
+
+        <RelativeLayout
+            android:id="@+id/layoutPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_marginEnd="@dimen/all_margin_long">
+
+            <LinearLayout
+                android:id="@+id/layoutChooseAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true">
+
+                <ImageButton
+                    android:id="@+id/ibtnMinus"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/custom_background_button_circle_transparent_gray_when_click"
+                    android:src="@drawable/ic_minus"
+                    android:layout_marginEnd="@dimen/all_margin_short"
+                    android:tint="@color/colorPrimaryButton" />
+
+                <TextView
+                    android:id="@+id/tvQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/all_button_edit_size"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="@dimen/all_padding_short"
+                    android:paddingEnd="@dimen/all_padding_short"
+                    android:background="@drawable/custom_background_5_radius_transparent_border_gray"
+                    android:baselineAligned="false"
+                    android:gravity="center"
+                    android:text="0"/>
+
+                <ImageButton
+                    android:id="@+id/ibtnPlus"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="@dimen/all_margin_short"
+                    android:background="@drawable/custom_background_button_circle_transparent_gray_when_click"
+                    android:src="@drawable/ic_plus_round"
+                    android:tint="@color/colorPrimaryButton" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/layoutChooseAmount"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/all_margin_long"
+                        android:textColor="@color/colorTextSecondary"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/tvPriceAfterPromotion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextPrimary"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvAddNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_background_button_transparent_gray_when_click"
+                    android:text="@string/all_add_note"
+                    android:textColor="@color/colorBluePrimary"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvContentNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_background_button_transparent_gray_when_click"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/colorBluePrimary"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

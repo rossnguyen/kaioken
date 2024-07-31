@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorMasterialGrey_4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutDeliveryAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/all_padding_short">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="@dimen/all_margin_supper_short"
+            android:src="@drawable/ic_location"
+            android:tint="@color/colorBlackPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/all_margin_short"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_address"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDeliveryAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="292/37/18 đường Bình Lợi, phường 13, quận Bình Thạnh" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/all_line_split_super_slim"
+        android:background="@color/colorGrayAppLight"/>
+
+    <LinearLayout
+        android:id="@+id/layoutNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/all_padding_short">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="@dimen/all_margin_supper_short"
+            android:src="@drawable/ic_note"
+            android:tint="@color/colorBlackPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/all_margin_short"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/all_note"/>
+
+            <TextView
+                android:id="@+id/tvNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/all_add_note"
+                android:textColor="@color/colorTextSecondary" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/all_line_split_super_slim"
+        android:background="@color/colorGrayAppLight"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layoutCoupon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:padding="@dimen/all_padding_short">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="@dimen/all_margin_supper_short"
+                android:rotation="160"
+                android:src="@drawable/ic_coupon_code"
+                android:tint="@color/colorBlackPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/all_margin_short"
+                android:layout_marginEnd="@dimen/all_margin_short"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all_promotion" />
+
+                <TextView
+                    android:id="@+id/tvCouponCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/payment_enter_coupon"
+                    android:textColor="@color/colorTextSecondary" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.002"
+            android:background="@color/colorGrayAppLight"/>
+
+        <LinearLayout
+            android:id="@+id/layoutSchedule"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:padding="@dimen/all_padding_short">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="@dimen/all_margin_supper_short"
+                android:src="@drawable/ic_lock"
+                android:tint="@color/colorBlackPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/all_margin_short"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payment_delivery_can_wait_to" />
+
+                <TextView
+                    android:id="@+id/tvCanWaitTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/delivery_choose_time"
+                    android:textColor="@color/colorTextSecondary" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/all_line_split_super_slim"
+        android:background="@color/colorGrayAppLight"/>
+
+    <LinearLayout
+        android:id="@+id/layoutPaymentType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/all_margin_short"
+        android:background="@drawable/custom_background_short_corner_gray_light"
+        android:orientation="horizontal"
+        android:padding="@dimen/all_padding_supper_short">
+
+        <LinearLayout
+            android:id="@+id/btnPaymentTypeKi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginEnd="@dimen/all_margin_short"
+            android:padding="@dimen/all_padding_short"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvKi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ví Ki" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnPaymentTypeCash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_background_short_corner_material_4_gray_border"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/all_padding_short">
+
+            <TextView
+                android:id="@+id/tvCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0k"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiền mặt" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

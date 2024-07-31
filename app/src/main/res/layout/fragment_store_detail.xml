@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorMasterialGrey_3">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <agv.kaak.vn.kaioken.widget.TextViewWithIcon
+                android:id="@+id/tvPromotion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tvwi_src="@drawable/ic_gift_color"
+                app:tvwi_src_size="70dp"
+                app:tvwi_src_tint="@android:color/transparent"
+                app:tvwi_text="Khuyến mãi nè"
+                app:tvwi_text_color="@color/colorTextPrimary"
+                app:tvwi_text_sub="@string/detail_store_see_detail_promotion"
+                app:tvwi_text_navigate=""
+                android:visibility="gone"/>
+
+            <agv.kaak.vn.kaioken.widget.TextViewWithIcon
+                android:id="@+id/tvRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tvwi_src="@drawable/ic_star"
+                app:tvwi_src_size="70dp"
+                app:tvwi_src_tint="@color/colorOrangePrimary"
+                app:tvwi_text="5.8 điểm đánh giá"
+                app:tvwi_text_color="@color/colorTextPrimary"
+                app:tvwi_text_sub=""
+                app:tvwi_text_navigate=""/>
+
+            <agv.kaak.vn.kaioken.widget.TextViewWithIcon
+                android:id="@+id/tvAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tvwi_src="@drawable/ic_location_global"
+                app:tvwi_src_size="70dp"
+                app:tvwi_src_tint="@color/colorBlackPrimary"
+                app:tvwi_text="375A Quang Trung, tx An Khe"
+                app:tvwi_text_color="@color/colorTextPrimary"
+                app:tvwi_text_navigate="@string/detail_store_click_to_direct"
+                app:tvwi_text_sub=""/>
+
+            <agv.kaak.vn.kaioken.widget.TextViewWithIcon
+                android:id="@+id/tvShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tvwi_src="@drawable/ic_share"
+                app:tvwi_src_size="70dp"
+                app:tvwi_src_tint="@color/colorBlackPrimary"
+                app:tvwi_text="@string/detail_store_share_for_friends"
+                app:tvwi_text_color="@color/colorTextPrimary"
+                app:tvwi_text_sub="@string/detail_store_share_for_friends_sub"
+                app:tvwi_text_navigate=""/>
+
+            <agv.kaak.vn.kaioken.widget.TextViewWithIcon
+                android:id="@+id/tvTimeOpen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tvwi_src="@drawable/ic_open_sign"
+                app:tvwi_src_size="70dp"
+                app:tvwi_src_tint="@color/colorBlackPrimary"
+                app:tvwi_text="@string/detail_store_time_opening"
+                app:tvwi_text_color="@color/colorTextPrimary"
+                app:tvwi_text_sub="07:00AM - 10:00PM"
+                app:tvwi_text_navigate=""/>
+
+            <agv.kaak.vn.kaioken.widget.TextViewWithIcon
+                android:id="@+id/tvDescriptionStore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tvwi_src="@drawable/ic_info"
+                app:tvwi_src_size="70dp"
+                app:tvwi_src_tint="@color/colorBlackPrimary"
+                app:tvwi_text="@string/detail_store_description"
+                app:tvwi_text_color="@color/colorTextPrimary"
+                app:tvwi_text_sub=""
+                app:tvwi_text_navigate=""/>
+
+            <agv.kaak.vn.kaioken.widget.TextViewWithIcon
+                android:id="@+id/tvContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tvwi_src="@drawable/ic_contact"
+                app:tvwi_src_size="70dp"
+                app:tvwi_src_tint="@color/colorBlackPrimary"
+                app:tvwi_text="@string/detail_store_contact"
+                app:tvwi_text_color="@color/colorTextPrimary"
+                app:tvwi_text_sub=""
+                app:tvwi_text_navigate=""
+                android:visibility="gone"/>
+
+            <agv.kaak.vn.kaioken.widget.TextViewWithIcon
+                android:id="@+id/tvRecruitment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tvwi_src="@drawable/ic_recruitment"
+                app:tvwi_src_size="70dp"
+                app:tvwi_src_tint="@color/colorBlackPrimary"
+                app:tvwi_text="@string/detail_store_recruitment"
+                app:tvwi_text_color="@color/colorTextPrimary"
+                app:tvwi_text_sub=""
+                app:tvwi_text_navigate=""/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+

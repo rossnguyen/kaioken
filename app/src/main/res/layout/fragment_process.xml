@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.process.ProcessFragment">
+
+    <RelativeLayout
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorMasterialGrey_2">
+
+        <ImageButton
+            android:id="@+id/ibtnBack"
+            android:layout_width="@dimen/all_button_on_top_size"
+            android:layout_height="@dimen/all_button_on_top_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/all_margin_short"
+            android:background="@drawable/custom_background_button_circle_transparent_gray_when_click"
+            android:src="@drawable/ic_close"
+            android:tint="@color/colorBlackPrimary" />
+
+        <TextView
+            android:id="@+id/tvTotalMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/all_margin_long"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/all_margin_short"
+            android:layout_toStartOf="@id/tvTotalMoney"
+            android:layout_toEndOf="@id/ibtnBack" />
+    </RelativeLayout>
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/layoutBottomNavigateForRequestPayment"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/layoutBottomNavigate"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_above="@id/layoutBottomNavigateForRequestPayment"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layoutBottomNavigate"
+        android:layout_below="@id/layoutTitle"
+        android:background="@color/colorGrayAppLight">
+
+        <TextView
+            android:id="@+id/tvStatusSocket"
+            style="@style/TextViewStatusSocket"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/layoutTrack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/process_height_tracking"
+            android:layout_below="@id/tvStatusSocket"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:id="@+id/layoutContentCountDown"
+                android:layout_width="@dimen/process_height_tracking"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:paddingStart="@dimen/all_padding_short"
+                android:paddingTop="@dimen/all_padding_short"
+                android:paddingEnd="@dimen/all_padding_long"
+                android:paddingBottom="@dimen/all_padding_short" />
+
+            <RelativeLayout
+                android:id="@+id/layoutContentTracking"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/layoutContentCountDown" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutSplit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/all_line_split_super_slim"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorGrayAppLight"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutContentDetailOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/layoutSplit"
+            android:layout_below="@id/layoutTrack"
+            android:background="@color/colorMasterialGrey_4"></RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

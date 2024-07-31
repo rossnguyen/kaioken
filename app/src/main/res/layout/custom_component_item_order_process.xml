@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/all_margin_long"
+        android:layout_marginRight="@dimen/all_margin_short"
+        android:layout_centerVertical="true"
+        android:background="@drawable/custom_background_circle_gradient_white_black"
+        android:src="@drawable/ic_dot_red"
+        android:padding="7dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/img">
+        <TextView
+            android:id="@+id/tvMainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gởi đơn hàng" />
+
+        <TextView
+            android:id="@+id/tvSubText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBluePrimary"
+            android:textStyle="italic"/>
+    </LinearLayout>
+</RelativeLayout>

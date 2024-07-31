@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.OrderActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorMasterialGrey_4"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/ibtnBack"
+            android:layout_width="@dimen/all_button_on_top_size"
+            android:layout_height="@dimen/all_button_on_top_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/all_margin_short"
+            android:background="@drawable/custom_background_button_circle_transparent_gray_when_click"
+            android:src="@drawable/ic_back"
+            android:tint="@color/colorBlackPrimary"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/all_margin_long"
+            android:layout_toRightOf="@id/ibtnBack"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/ibtnCallWaiter"
+            android:layout_width="@dimen/all_button_on_top_size"
+            android:layout_height="@dimen/all_button_on_top_size"
+            android:background="@drawable/custom_background_button_circle_transparent_gray_when_click"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_bell"
+            android:tint="@color/colorBlackPrimary"
+            android:layout_marginEnd="@dimen/all_margin_short"
+            android:layout_alignParentEnd="true" />
+        <android.support.v7.widget.SearchView
+            android:id="@+id/svSearchFood"
+            android:layout_width="@dimen/all_button_on_top_size"
+            android:layout_height="@dimen/all_button_on_top_size"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/ibtnCallWaiter"
+            android:layout_marginEnd="@dimen/all_margin_short"
+            app:queryHint="@string/choose_food_search_hint" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/all_line_split_super_slim"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorGrayAppLight"></RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/all_line_split_super_slim"
+        android:background="@color/colorGrayAppLight"/>
+    <TextView
+        android:id="@+id/tvStatusSocket"
+        style="@style/TextViewStatusSocket"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMasterialGrey_3"
+        android:gravity="center"/>
+
+</LinearLayout>

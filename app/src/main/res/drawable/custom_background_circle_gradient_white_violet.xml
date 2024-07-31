@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--https://stackoverflow.com/questions/2470072/circular-gradient-in-android-->
+    <item
+        android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="100%p"
+                android:startColor="#a0c4c4c3"
+                android:endColor="#9271f2" />
+        </shape>
+    </item>
+</selector>

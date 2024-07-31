@@ -1,0 +1,131 @@
+{
+  "project_info": {
+    "project_number": "713068529469",
+    "firebase_url": "https://kaak-83837.firebaseio.com",
+    "project_id": "kaak-83837",
+    "storage_bucket": "kaak-83837.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713068529469:android:a180c71855e6aa03",
+        "android_client_info": {
+          "package_name": "agv.kaak.vn.kaioken"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713068529469-3dankntiqf7ar2n59er9a550cfjti4jn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "agv.kaak.vn.kaioken",
+            "certificate_hash": "21db11098a6531e90279f096d73bde2aeaf28c80"
+          }
+        },
+        {
+          "client_id": "713068529469-q5ts8jej9vd7b42i3mkrqi2chtg15ae2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "agv.kaak.vn.kaioken",
+            "certificate_hash": "567f08d85e3700991ce0bc9c9b0dddcb491c5c43"
+          }
+        },
+        {
+          "client_id": "713068529469-vlevnndlbqo9589a6h0kpk5mta38k8dh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt1wsFlFXnuOOaMHPPtR4XERYc8UoK7w4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713068529469-eka0nbt75dbkh720gtu7e0sn9c7tcabh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "713068529469-lvjvq4hoki2ml65nsamdmq39h6dpkguk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.luan.kaakuser",
+                "app_store_id": "1379995853"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713068529469:android:7dcbd5a1e700ce67",
+        "android_client_info": {
+          "package_name": "vn.kaak.kposstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713068529469-nqecth8iparjc2fr7o7r0co97cgku0uk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.kaak.kposstore",
+            "certificate_hash": "b2c1dc28950256a586c702d53e8c83443369e6a8"
+          }
+        },
+        {
+          "client_id": "713068529469-2kbfpnqdb2b5sannk0ect67u48ejkfp3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.kaak.kposstore",
+            "certificate_hash": "9468401ebe5b75657a862f04a6d494d07bcbead6"
+          }
+        },
+        {
+          "client_id": "713068529469-vlevnndlbqo9589a6h0kpk5mta38k8dh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt1wsFlFXnuOOaMHPPtR4XERYc8UoK7w4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713068529469-eka0nbt75dbkh720gtu7e0sn9c7tcabh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "713068529469-lvjvq4hoki2ml65nsamdmq39h6dpkguk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.luan.kaakuser",
+                "app_store_id": "1379995853"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/ibtnOrdering"
+        android:orderInCategory="100"
+        android:title="@string/all_order"
+        android:icon="@drawable/ic_heart_bold"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/ibtnNotice"
+        android:orderInCategory="100"
+        android:title="@string/all_notice"
+        android:icon="@drawable/ic_delivery"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/ibtnHistory"
+        android:orderInCategory="100"
+        android:title="@string/all_history"
+        android:icon="@drawable/ic_restaurant"
+        app:showAsAction="always" />
+</menu>

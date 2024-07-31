@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMasterialGrey_3"
+    android:paddingEnd="2dp"
+    android:paddingStart="2dp">
+    <LinearLayout
+        android:id="@+id/layoutEmptyImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/colorMasterialGrey_3"
+        android:paddingTop="@dimen/all_padding_long"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_gallery"
+            android:tint="@color/colorGrayApp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/all_margin_short"
+            android:gravity="center_horizontal"
+            android:text="@string/detail_store_empty_image" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gridImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/all_padding_supper_short"
+        android:clipToPadding="false"/>
+
+</android.support.design.widget.CoordinatorLayout>

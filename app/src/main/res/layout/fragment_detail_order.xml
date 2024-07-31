@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.process.DetailOrderFragment">
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMasterialGrey_3"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/all_padding_long"
+        android:paddingTop="@dimen/all_margin_short"
+        android:paddingEnd="@dimen/all_padding_long"
+        android:paddingBottom="@dimen/all_margin_short">
+
+        <TextView
+            android:id="@+id/tvInvoiceNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/tvSumOrderWithoutDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/layoutLoading"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="@dimen/all_loading_size"
+        android:layout_height="@dimen/all_loading_size"
+        android:layout_below="@id/layoutTop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/all_margin_long"
+        android:visibility="visible"
+        app:indicatorColor="@color/colorGrayApp"
+        app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutTop">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lstOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMasterialGrey_3"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:visibility="gone" />
+            <View
+                android:id="@+id/layoutSplit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/all_line_split_medium"
+                android:layout_below="@id/lstOrder"
+                android:background="@color/colorGrayAppLight"/>
+
+            <LinearLayout
+                android:id="@+id/layoutSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutSplit"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/all_padding_short"
+                android:paddingBottom="@dimen/all_padding_short"
+                android:paddingStart="@dimen/all_padding_long"
+                android:paddingEnd="@dimen/all_padding_long"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/all_sum" />
+
+                    <TextView
+                        android:id="@+id/tvSumOrder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/all_line_split_super_slim"
+                    android:background="@color/colorGrayAppLight"
+                    android:layout_marginTop="@dimen/all_margin_short"
+                    android:layout_marginBottom="@dimen/all_margin_short"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invoice_detail_discount" />
+
+                    <TextView
+                        android:id="@+id/tvDiscount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/all_line_split_super_slim"
+                    android:background="@color/colorGrayAppLight"
+                    android:layout_marginTop="@dimen/all_margin_short"
+                    android:layout_marginBottom="@dimen/all_margin_short"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/all_excess" />
+
+                    <TextView
+                        android:id="@+id/tvFinal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlMoneyMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llMonth"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorMasterialGrey_2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/all_button_on_top_size"
+            android:layout_height="@dimen/all_button_on_top_size"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/all_margin_short"
+            android:padding="@dimen/all_padding_short"
+            android:src="@drawable/ic_back"
+            android:tint="@color/colorBlackPrimary"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingEnd="0dp"
+            android:paddingStart="@dimen/all_padding_short"
+            android:textSize="@dimen/big_size_text"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgCalendar"
+            android:layout_width="@dimen/all_button_on_top_size"
+            android:layout_height="@dimen/all_button_on_top_size"
+            android:layout_marginEnd="@dimen/all_margin_long"
+            android:background="@drawable/custom_background_transparent_gray_when_choose"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/all_padding_short"
+            android:src="@drawable/ic_calendar" />
+
+        <TextView
+            android:id="@+id/tvWatchViaMonth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|top"
+            android:layout_weight="1"
+            android:background="@drawable/custom_background_transparent_gray_when_choose"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center|end"
+            android:paddingEnd="@dimen/all_padding_short"
+            android:paddingStart="0dp"
+            android:text="@string/finance_watch_via_month"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/navigation"
+        android:layout_below="@id/llMonth"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/layout_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/all_margin_short"
+            android:overScrollMode="never"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/colorRedPrimary"
+            app:tabIndicatorHeight="2dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpFinanceDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="start"
+        app:itemBackground="@color/colorGrayApp"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/bottom_navigation_money_management" />
+
+    <include
+        android:id="@+id/loader"
+        layout="@layout/snipper_loading_white_match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chartFinance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/view_spacing" />
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_spacing_small"
+        android:background="@drawable/custom_background_button_circle_white"
+        android:elevation="@dimen/view_spacing_small"
+        android:padding="@dimen/view_spacing_small"
+        android:src="@drawable/ic_back"
+        android:tint="@color/colorRedPrimary" />
+
+    <include
+        android:id="@+id/loader"
+        layout="@layout/snipper_loading_white_match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

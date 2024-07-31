@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layoutRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/all_padding_long"
+    android:background="@drawable/custom_background_5_radius_paper_grey_border_dash"
+    android:layout_marginBottom="@dimen/all_margin_long">
+
+    <TextView
+        android:id="@+id/tvCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"/>
+    <TextView
+        android:id="@+id/tvValue"
+        android:layout_width="0dp"
+        android:gravity="end"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_weight="0.3"/>
+</LinearLayout>

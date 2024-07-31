@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.process.CountDownFragment">
+
+    <RelativeLayout
+        android:id="@+id/layoutInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <agv.kaak.vn.kaioken.widget.TextViewKMoney
+            android:id="@+id/tvSumBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/all_margin_short"
+            app:tvkm_text_size="@dimen/small_size_text"
+            app:tvkm_k_size="@dimen/small_size_text"
+            app:tvkm_text=""
+            app:tvkm_k_color="@color/colorWhiteApp"
+            app:tvkm_text_color="@color/colorWhiteApp"
+            android:visibility="gone"/>
+
+        <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/process"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tvSumBill"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/all_margin_short"
+            app:arc_bottom_text="Chờ xử lý"
+            app:arc_bottom_text_size="@dimen/small_size_text"
+            app:arc_finished_color="@color/colorRedPrimary"
+            app:arc_max="60"
+            app:arc_progress="0"
+            app:arc_stroke_width="4dp"
+            app:arc_suffix_text="@string/all_minutes"
+            app:arc_suffix_text_size="8sp"
+            app:arc_suffix_text_padding="@dimen/all_padding_short"
+            app:arc_text_color="@color/colorBlackPrimary"
+            app:arc_text_size="30sp"
+            app:arc_unfinished_color="@color/colorRedLight" />
+    </RelativeLayout>
+
+</FrameLayout>

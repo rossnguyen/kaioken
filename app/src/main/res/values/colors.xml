@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#801ee7</color>
+
+    <color name="colorPrimaryButton">#801ee7</color>
+    <color name="colorPrimaryButtonPressed">#296200ee</color>
+
+    <color name="colorWhiteApp">#fdfdfd</color>
+    <color name="colorWhiteDarkTheme">#dfffffff</color>
+    <color name="colorBlackPrimary">#535353</color>
+
+    <color name="colorMistApp">#d7101010</color>
+    <color name="colorMistApp_1">#870b0b0b</color>
+    <color name="colorMistApp_2">#a4ffffff</color>
+    <color name="colorMistApp_3">#26ffffff</color>
+    <color name="colorMistApp_4">#edffffff</color>
+    <color name="colorMistApp_5">#410b0b0b</color>
+    <color name="colorOverlaySpotLight">#706f6f</color>
+    <color name="colorMistTransparent">#00ffffff</color>
+
+    <color name="colorHover">#ebffffff</color>
+    <color name="colorFocus">#c2ffffff</color>
+    <color name="colorSelected">#d6ffffff</color>
+    <color name="colorActivated">#c2ffffff</color>
+    <color name="colorPressed">#adffffff</color>
+    <color name="colorDragged">#d6ffffff</color>
+
+    <color name="colorDisable">#dfdfdf</color>
+
+    <color name="colorGrayApp">#a3a2a2</color>
+    <color name="colorGrayAppLight">#e7e6e6</color>
+    <color name="colorGrayAppSupperLight">#f5f5f5</color>
+    <color name="colorGrayAppDark">#767575</color>
+
+    <color name="colorRedPrimary">#ff2600</color>
+    <color name="colorRedLight">#d1f1c2c2</color>
+    <color name="colorRedDark">#D50000</color>
+
+    <color name="colorOrangePrimary">#fda900</color>
+    <color name="colorOrangeLight">#ffdcae</color>
+
+    <color name="colorBluePrimary">#2962ff</color>
+    <color name="colorBlueLight">#3d8dfa</color>
+    <color name="colorBlueDark">#0039cb</color>
+
+    <color name="colorVioletPrimary">#6200EE</color>
+
+    <color name="colorGreenAppPrimary">#02b930</color>
+
+    <color name="colorMasterialGrey_1">#E0E0E0</color>
+    <color name="colorMasterialGrey_2">#F5F5F5</color>
+    <color name="colorMasterialGrey_3">#FAFAFA</color>
+    <color name="colorMasterialGrey_4">#FFFFFF</color>
+
+    <color name="colorTextPrimary">#de000000</color>
+    <color name="colorTextSecondary">#8a000000</color>
+    <color name="colorTextDisable">#61000000</color>
+    <color name="colorTextDivider">#1f000000</color>
+
+    <color name="colorTextWhitePrimary">#deffffff</color>
+    <color name="colorTextWhiteSecondary">#b4ffffff</color>
+
+    <color name="colorBackgroundPrimary_4">#f5f0f7</color>
+
+    <color name="colorPinkPrimary">#f1417f</color>
+
+    <color name="colorLogo">#a02869</color>
+    <color name="colorTextVioletPrimary">#662493</color>
+    <color name="colorTextVioletSecondary">#ab662493</color>
+
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.home.SearchFragment">
+
+    <RelativeLayout
+        android:id="@+id/layoutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_background_0_radius_masterial4_border_gray_top_bottom">
+
+        <SearchView
+            android:id="@+id/svSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-50dp"
+            android:paddingLeft="40dp"
+            android:layout_toStartOf="@id/ibtnAdjust"
+            android:iconifiedByDefault="false"
+            android:focusable="true"
+            android:queryBackground="@android:color/transparent"
+            android:queryHint="@string/map_search_hint" />
+
+        <ImageButton
+            android:id="@+id/ibtnBack"
+            android:layout_width="@dimen/all_button_on_top_size"
+            android:layout_height="@dimen/all_button_on_top_size"
+            android:layout_centerVertical="true"
+            android:background="@drawable/custom_background_button_circle_material4_gray_when_click"
+            android:clickable="true"
+            android:padding="@dimen/all_padding_short"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_back"
+            android:tint="@color/colorBlackPrimary" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layoutCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMasterialGrey_4"
+        android:layout_below="@id/layoutToolbar"
+        android:padding="@dimen/all_padding_short">
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/map_search_description_category"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/gridCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/all_margin_short"
+            android:layout_below="@id/tvDescription"/>
+        <include
+            android:id="@+id/loadingCategory"
+            layout="@layout/snipper_loading_white_match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/layoutSpace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutCategory"
+        android:background="@color/colorMistApp_1"/>
+
+</RelativeLayout>

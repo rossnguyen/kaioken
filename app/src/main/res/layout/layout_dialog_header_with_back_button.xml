@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/DialogHeaderPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingEnd="50dp"
+        android:paddingStart="50dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tvBack"
+        style="@style/DialogHeaderPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:drawableStart="@drawable/ic_remove_x_gray" />
+
+</FrameLayout>

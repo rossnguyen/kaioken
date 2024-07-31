@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/layoutHeader"
+        layout="@layout/layout_dialog_header_with_back_button" />
+
+    <FrameLayout
+        android:id="@+id/flCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutHeader">
+
+        <FrameLayout
+            android:id="@+id/layout_calendar_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpagerMonthDialog"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:overScrollMode="never"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llPreviewMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flCalendar"
+        android:background="@color/colorGrayAppLight"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/view_spacing_small"
+        android:paddingTop="@dimen/view_spacing_small">
+
+        <TextView
+            android:id="@+id/tvPreviewMode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="@dimen/view_spacing"
+            android:text="@string/finance_watch_via_month" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/loader"
+        layout="@layout/snipper_loading_white_match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

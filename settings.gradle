@@ -1,0 +1,1 @@
+include ':app', ':libZaloSDK-v2.3.01.8'

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.home.NotificationFragment">
+
+    <RelativeLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"/>
+    <RelativeLayout
+        android:id="@+id/layoutOption"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:gravity="center_vertical"
+        android:background="@color/colorMasterialGrey_2"
+        android:visibility="visible">
+        <CheckBox
+            android:id="@+id/ckbAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/all_margin_long"
+            android:layout_alignParentEnd="true"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/TextButtonPrimary"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/ckbAll"
+            android:text="@string/all_delete"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/TextButtonPrimary"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/all_margin_short"
+            android:text="@string/all_cancel_choose"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvStatusSocket"
+        style="@style/TextViewStatusSocket"
+        android:layout_below="@id/layoutTitle"
+        android:visibility="gone"/>
+    <agv.kaak.vn.kaioken.widget.NonSwipableViewPager
+        android:id="@+id/layoutPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvStatusSocket" />
+
+</RelativeLayout>

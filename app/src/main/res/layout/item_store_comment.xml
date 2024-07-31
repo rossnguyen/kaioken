@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/all_margin_short"
+    android:background="@drawable/custom_background_0_radius_masterial4_border_gray_top_bottom"
+    android:orientation="vertical"
+    android:padding="@dimen/all_padding_long">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="@dimen/all_avatar_small"
+            android:layout_height="@dimen/all_avatar_small"
+            android:src="@drawable/ic_user"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/all_margin_long"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyễn Phục đẹp trai"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/medium_size_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:01 ngày 02/11/2017"
+                    android:textColor="@color/colorTextSecondary" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/all_margin_long"
+        android:text="Quán nhìn vậy thôi chứ ăn ngon số dzách, ngồi ăn mà ruồi bay vo ve tạo nên một bản giao hưởng cực kỳ lãng mạn. Quán kế bờ sông nên view cực đẹp, thỉnh thoảng có vài bãi *** trôi sông nữa."
+        android:textColor="@color/colorTextPrimary" />
+
+    <FrameLayout
+        android:id="@+id/layoutImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="@dimen/all_margin_short">
+
+        <LinearLayout
+            android:id="@+id/layout1Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/img1_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/ImageViewPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhiteApp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/img2_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/restaurant_comment_margin_image"
+                android:layout_weight="0.5"
+                style="@style/ImageViewPrimary" />
+
+            <ImageView
+                android:id="@+id/img2_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                style="@style/ImageViewPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhiteApp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/img3_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/restaurant_comment_margin_image"
+                android:layout_weight="0.7"
+                style="@style/ImageViewPrimary" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/restaurant_comment_margin_image"
+                    android:layout_weight="0.5"
+                    style="@style/ImageViewPrimary" />
+
+                <ImageView
+                    android:id="@+id/img3_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    style="@style/ImageViewPrimary" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout4Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhiteApp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/restaurant_comment_margin_image"
+                android:layout_weight="0.65"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img4_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/restaurant_comment_margin_image"
+                    android:layout_weight="0.65"
+                    style="@style/ImageViewPrimary" />
+
+                <ImageView
+                    android:id="@+id/img4_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35"
+                    style="@style/ImageViewPrimary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.35"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img4_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/restaurant_comment_margin_image"
+                    android:layout_weight="0.5"
+                    style="@style/ImageViewPrimary" />
+
+                <ImageView
+                    android:id="@+id/img4_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    style="@style/ImageViewPrimary" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout5Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhiteApp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/restaurant_comment_margin_image"
+                android:layout_weight="0.65"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img5_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/restaurant_comment_margin_image"
+                    android:layout_weight="0.5"
+                    style="@style/ImageViewPrimary" />
+
+                <ImageView
+                    android:id="@+id/img5_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    style="@style/ImageViewPrimary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.35"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img5_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/restaurant_comment_margin_image"
+                    android:layout_weight="0.3"
+                    style="@style/ImageViewPrimary" />
+
+                <ImageView
+                    android:id="@+id/img5_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/restaurant_comment_margin_image"
+                    android:layout_weight="0.3"
+                    style="@style/ImageViewPrimary" />
+
+                <ImageView
+                    android:id="@+id/img5_5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    style="@style/ImageViewPrimary" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout6Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhiteApp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/restaurant_comment_margin_image"
+                android:layout_weight="0.65"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img6_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/restaurant_comment_margin_image"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/custom_background_transparent_gray_light_border"
+                    style="@style/ImageViewPrimary" />
+
+                <ImageView
+                    android:id="@+id/img6_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/custom_background_transparent_gray_light_border"
+                    style="@style/ImageViewPrimary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.35"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img6_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/restaurant_comment_margin_image"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/custom_background_transparent_gray_light_border"
+                    style="@style/ImageViewPrimary" />
+
+                <ImageView
+                    android:id="@+id/img6_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/restaurant_comment_margin_image"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/custom_background_transparent_gray_light_border"
+                    style="@style/ImageViewPrimary" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3">
+
+                    <ImageView
+                        android:id="@+id/img6_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/custom_background_transparent_gray_light_border"
+                        style="@style/ImageViewPrimary" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorMistApp">
+
+                        <TextView
+                            android:id="@+id/tvNumberMoreImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="+5"
+                            android:textColor="@color/colorWhiteApp"
+                            android:textSize="@dimen/medium_size_text"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

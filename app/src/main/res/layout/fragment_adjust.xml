@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutAdjust"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/all_padding_short"
+    android:paddingLeft="@dimen/map_layout_content_margin_left_right"
+    android:paddingRight="@dimen/map_layout_content_margin_left_right"
+    android:paddingTop="@dimen/all_padding_short">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/map_filter"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+    <Switch
+        android:id="@+id/switchOpen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_store_is_openning" />
+
+    <Switch
+        android:id="@+id/switchDelivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/all_margin_long"
+        android:text="@string/map_restaurant_have_delivery" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/all_margin_short">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/map_search_around"/>
+        <TextView
+            android:id="@+id/tvProvince"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_background_transparent_gray_when_choose"
+            android:padding="@dimen/all_padding_short"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorPrimaryButton"
+            android:textStyle="bold"
+            android:text="@string/all_ho_chi_minh_city" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/all_margin_short">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/map_search_radius"/>
+        <TextView
+            android:id="@+id/tvDistance"
+            android:padding="@dimen/all_padding_short"
+            android:background="@drawable/custom_background_transparent_gray_when_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorPrimaryButton"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        style="@style/OutlinedButtonPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/all_margin_long"
+        android:text="@string/map_search_now" />
+</LinearLayout>

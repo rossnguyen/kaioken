@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.order.ShowMenuFragment">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/layoutPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMasterialGrey_3"
+        android:layout_marginTop="@dimen/viewpager_height"/>
+
+    <com.dd.ShadowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginRight="-4dp"
+        app:sl_shadowRadius="@dimen/all_masterial_elevation_appbar"
+        app:sl_shadowColor="@color/colorGrayApp"
+        app:sl_dx="0dp"
+        app:sl_dy="0dp"
+        app:sl_cornerRadius="0dp">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/layoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/viewpager_height"
+            android:overScrollMode="never"
+            app:tabTextAppearance="@style/TextAppearanceNomal"
+            app:tabGravity="fill"
+            app:tabMode="scrollable"
+            app:tabBackground="@color/colorMasterialGrey_4"
+            app:tabIndicatorColor="@color/colorBlackPrimary"/>
+
+    </com.dd.ShadowLayout>
+</FrameLayout>

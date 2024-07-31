@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="agv.kaak.vn.kaioken">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission
+        android:name="android.permission.BIND_VOICE_INTERACTION"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:name=".utils.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider250222255760408"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <service android:name=".utils.firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".utils.firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_heart" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="appID"
+            android:value="@string/zalo_app_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".service.FloattingViewService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionbar.FillStatusBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.OrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".activity.ProcessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".activity.CallWaiterActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".activity.PaymentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".activity.InfoStoreActivity"
+            android:theme="@style/AppTheme.NoActionbar.TransparentStatusBar"/>
+
+        <activity
+            android:name=".activity.CreateCommentActivity"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".activity.ModeOfUseActivity"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".activity.ChooseCoordinatesActivity"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionbar.FillStatusBarDark"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.OTPActivity"
+            android:theme="@style/AppTheme.NoActionbar.FillStatusBarDark"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.Login2Activity"
+            android:theme="@style/AppTheme.NoActionbar.FillStatusBarDark"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.ForgotPasswordActivity"
+            android:theme="@style/AppTheme.NoActionbar.FillStatusBarDark"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.FinanceChartActivity" />
+        <activity
+            android:name=".activity.ForceLogoutActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".activity.ChooseShareActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="com.zing.zalo.zalosdk.oauth.OpenAPIActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".activity.SeeInvoiceDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".activity.InfoUserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".activity.DetailNewsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity android:name=".activity.LikedActivity" />
+        <activity
+            android:name=".activity.DirectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity
+            android:name=".activity.AboutActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+
+        <activity android:name=".activity.EnterPhoneNumberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionbar"/>
+    </application>
+
+</manifest>

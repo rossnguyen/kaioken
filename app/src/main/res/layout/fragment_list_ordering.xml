@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.home.ListOrderingFragment"
+    android:background="@color/colorMasterialGrey_3">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lstOrdering"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/layoutEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorMasterialGrey_3"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_eating"
+            android:tint="@color/colorGrayApp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/all_margin_short"
+            android:text="@string/track_order_empty"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layoutLoading"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        layout="@layout/snipper_loading_white_match_parent"
+        android:visibility="gone"/>
+
+</FrameLayout>

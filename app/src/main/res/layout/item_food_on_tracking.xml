@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/all_padding_short"
+    android:background="@drawable/custom_background_0_radius_masterial4_border_gray_top_bottom">
+
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="@dimen/item_choose_food_avatar_size"
+        android:layout_height="@dimen/item_choose_food_avatar_size"
+        android:layout_marginLeft="@dimen/all_margin_short"
+        android:layout_centerVertical="true"
+        android:background="@drawable/custom_background_transparent_gray_light_border"
+        android:padding="2dp"
+        android:layout_marginTop="@dimen/all_margin_long"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_picture"/>
+
+    <RelativeLayout
+        android:id="@+id/layoutInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/imgAvatar"
+        android:layout_marginStart="@dimen/all_margin_short"
+        android:paddingEnd="@dimen/all_padding_long">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/all_margin_short"
+            android:text="Thịt bò xào tương hột hải sản chua cay"
+            android:textColor="@color/colorTextPrimary"/>
+
+        <RelativeLayout
+            android:id="@+id/layoutPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_marginBottom="@dimen/all_margin_short">
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="5K" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tvPrice"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="@dimen/all_margin_short"
+                        android:src="@drawable/ic_money"/>
+                    <TextView
+                        android:id="@+id/tvPriceUnitBefore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="@dimen/all_padding_short"
+                        android:layout_marginEnd="@dimen/all_margin_long"
+                        android:textColor="@color/colorTextPrimary" />
+
+                    <TextView
+                        android:id="@+id/tvPriceUnitAfter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorTextPrimary"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/all_margin_long" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvContentNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:drawableLeft="@drawable/ic_list_task"
+                    android:drawablePadding="@dimen/all_padding_short"
+                    android:textColor="@color/colorBluePrimary"
+                    android:background="@drawable/custom_background_button_transparent_gray_when_click" />
+                <TextView
+                    android:id="@+id/tvAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Phục đẹp trai"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/all_padding_short"
+                    android:textColor="@color/colorTextSecondary"/>
+                <TextView
+                    android:id="@+id/tvSizeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextSecondary"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/tvTopping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextSecondary"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

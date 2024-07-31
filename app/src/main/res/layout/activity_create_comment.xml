@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CreateCommentActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/layoutImageUpload"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/restaurant_comment_layout_image_upload_height"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="#f4f5f5">
+
+        <ImageButton
+            android:id="@+id/ibtnAddImage"
+            android:layout_width="@dimen/restaurant_comment_image_upload_size"
+            android:layout_height="@dimen/restaurant_comment_image_upload_size"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="@dimen/restaurant_comment_delete_image_upload_size"
+            android:layout_marginLeft="@dimen/all_margin_long"
+            android:layout_marginRight="@dimen/all_margin_long"
+            android:layout_marginTop="@dimen/restaurant_comment_delete_image_upload_size"
+            android:background="@drawable/custom_background_button_circle_white"
+            android:src="@drawable/ic_camera" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lstImageUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_background_5_radius_masterial_4_grey_border"
+        android:layout_margin="@dimen/all_margin_long"
+        android:padding="@dimen/all_padding_short"
+        android:gravity="top"
+        android:lines="6"
+        android:maxLines="6"
+        android:textSize="@dimen/medium_size_text"
+        android:hint="@string/comment_hint" />
+    <Button
+        android:id="@+id/btnSend"
+        style="@style/OutlinedButtonPrimary"
+        android:text="@string/comment_send"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

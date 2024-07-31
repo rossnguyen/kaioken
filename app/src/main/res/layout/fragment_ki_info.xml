@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundPrimary_4"
+    android:orientation="vertical"
+    android:padding="@dimen/all_padding_long">
+
+    <RelativeLayout
+        android:id="@+id/layoutListKiSaved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_background_5_radius_masterial_4_gray_border"
+        android:padding="@dimen/all_padding_long">
+
+        <ImageView
+            android:id="@+id/imgListKiSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_ki_saved" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/all_margin_long"
+            android:layout_toEndOf="@id/imgListKiSave"
+            android:text="@string/ki_ki_saved" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next"
+            android:tint="@color/colorBlackPrimary" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutListCoupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/all_margin_long"
+        android:background="@drawable/custom_background_5_radius_masterial_4_gray_border"
+        android:padding="@dimen/all_padding_long">
+
+        <ImageView
+            android:id="@+id/imgListCoupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_coupon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/all_margin_long"
+            android:layout_toEndOf="@id/imgListCoupon"
+            android:text="@string/ki_my_coupon" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next"
+            android:tint="@color/colorBlackPrimary" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingEnd="60dp"
+        android:paddingStart="60dp">
+
+        <ImageView
+            android:id="@+id/imgExpland"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_hand_rating"
+            android:tint="@color/colorTextVioletPrimary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/all_margin_short"
+            android:layout_toEndOf="@id/imgExpland"
+            android:gravity="center"
+            android:text="@string/ki_expland"
+            android:textColor="@color/colorTextVioletPrimary"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgQR"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/all_margin_long"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/ki_my_qr_code"
+        android:textColor="@color/colorTextVioletPrimary" />
+
+</LinearLayout>

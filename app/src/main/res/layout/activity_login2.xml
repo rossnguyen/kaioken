@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="-2dp"
+    android:background="@drawable/background_login_2"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/layoutRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/login_padding_left_right"
+            android:paddingRight="@dimen/login_padding_left_right">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/all_margin_long"
+                android:layout_marginBottom="@dimen/all_margin_short"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/all_password"
+                android:textColor="@color/colorBlackPrimary"
+                android:textSize="@dimen/text_view_size" />
+
+            <EditText
+                android:id="@+id/etPassWord"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_background_5_radius_transparent_border_gray"
+                android:drawableEnd="@drawable/ic_eye"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:padding="@dimen/all_padding_short" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/all_margin_short">
+
+                <TextView
+                    android:id="@+id/tvForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/custom_background_transparent_gray_when_choose"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="@dimen/all_padding_short"
+                    android:text="@string/login_forgot_password"
+                    android:textColor="@color/colorLogo"
+                    android:textSize="@dimen/text_view_size" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/all_margin_long"
+                android:background="@drawable/custom_background_button_login1"
+                android:paddingBottom="@dimen/all_padding_short"
+                android:paddingEnd="32dp"
+                android:paddingStart="32dp"
+                android:paddingTop="@dimen/all_padding_short"
+                android:text="@string/all_login"
+                android:textColor="@color/colorWhiteApp"
+                android:textSize="@dimen/text_view_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/colorGrayAppLight"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imgAvatar"
+            android:textSize="@dimen/big_size_text"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="@dimen/all_loading_size"
+            android:layout_height="@dimen/all_loading_size"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            app:indicatorColor="@color/colorTextWhiteSecondary"
+            app:indicatorName="BallSpinFadeLoaderIndicator" />
+    </RelativeLayout>
+    
+    <ImageButton
+        android:id="@+id/ibtnBack"
+        android:layout_width="@dimen/all_button_on_top_size"
+        android:layout_height="@dimen/all_button_on_top_size"
+        android:background="@drawable/custom_background_button_circle_transparent_gray_when_click"
+        android:layout_marginLeft="@dimen/all_margin_short"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_back"
+        android:tint="@color/colorBlackPrimary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/all_margin_short"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/all_copyright"
+        android:textColor="@color/colorTextWhitePrimary" />
+</FrameLayout>

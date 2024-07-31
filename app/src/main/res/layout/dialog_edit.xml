@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/all_padding_long">
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etContent"
+        android:layout_marginTop="@dimen/all_button_margin_top_dialog">
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/TextButtonPrimary"
+            android:layout_alignParentEnd="true"
+            android:text="@string/all_save_change"/>
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/TextButtonPrimary"
+            android:layout_marginRight="@dimen/all_margin_short"
+            android:layout_toLeftOf="@id/btnSave"
+            android:text="@string/all_cancel"/>
+    </RelativeLayout>
+</RelativeLayout>

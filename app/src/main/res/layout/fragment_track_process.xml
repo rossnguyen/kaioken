@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/layoutProcess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/layoutProcessLocal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <agv.kaak.vn.kaioken.widget.ItemOrderProcess
+                    android:id="@+id/stepSendRequirement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iop_gravity_is_left="false"
+                    app:iop_is_finish="true"
+                    app:iop_main_text="@string/process_status_tracking_send_require"
+                    app:iop_sub_text=""
+                    app:iop_main_text_color="@color/colorGrayApp"
+                    app:iop_main_text_color_finish="@color/colorBlackPrimary"/>
+
+                <agv.kaak.vn.kaioken.widget.ItemOrderProcess
+                    android:id="@+id/stepConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iop_gravity_is_left="false"
+                    app:iop_is_finish="true"
+                    app:iop_main_text="@string/process_status_tracking_confirm_require"
+                    app:iop_sub_text=""
+                    app:iop_main_text_color="@color/colorGrayApp"
+                    app:iop_main_text_color_finish="@color/colorBlackPrimary" />
+
+                <agv.kaak.vn.kaioken.widget.ItemOrderProcess
+                    android:id="@+id/stepIsProcessing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iop_gravity_is_left="false"
+                    app:iop_is_finish="true"
+                    app:iop_main_text="@string/process_status_tracking_processing"
+                    app:iop_sub_text=""
+                    app:iop_main_text_color="@color/colorGrayApp"
+                    app:iop_main_text_color_finish="@color/colorBlackPrimary"/>
+
+                <agv.kaak.vn.kaioken.widget.ItemOrderProcess
+                    android:id="@+id/stepIsServing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iop_gravity_is_left="false"
+                    app:iop_is_finish="true"
+                    app:iop_main_text="@string/process_status_tracking_serving"
+                    app:iop_sub_text=""
+                    app:iop_main_text_color="@color/colorGrayApp"
+                    app:iop_main_text_color_finish="@color/colorBlackPrimary" />
+
+                <agv.kaak.vn.kaioken.widget.ItemOrderProcess
+                    android:id="@+id/stepSendRequirePayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iop_gravity_is_left="false"
+                    app:iop_is_finish="true"
+                    app:iop_main_text="@string/process_status_tracking_send_require_payment"
+                    app:iop_sub_text=""
+                    app:iop_main_text_color="@color/colorGrayApp"
+                    app:iop_main_text_color_finish="@color/colorBlackPrimary"/>
+                <agv.kaak.vn.kaioken.widget.ItemOrderProcess
+                    android:id="@+id/stepEnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iop_gravity_is_left="false"
+                    app:iop_is_finish="true"
+                    app:iop_main_text="@string/process_status_tracking_send_require_finish"
+                    app:iop_sub_text=""
+                    app:iop_main_text_color="@color/colorGrayApp"
+                    app:iop_main_text_color_finish="@color/colorBlackPrimary"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutProcessDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <agv.kaak.vn.kaioken.widget.ItemOrderProcess
+                    android:id="@+id/stepSendRequirementDelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iop_gravity_is_left="false"
+                    app:iop_is_finish="true"
+                    app:iop_main_text="@string/process_status_tracking_send_require"
+                    app:iop_sub_text=""
+                    app:iop_main_text_color="@color/colorGrayApp"
+                    app:iop_main_text_color_finish="@color/colorBlackPrimary"/>
+
+                <agv.kaak.vn.kaioken.widget.ItemOrderProcess
+                    android:id="@+id/stepConfirmDelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iop_gravity_is_left="false"
+                    app:iop_is_finish="true"
+                    app:iop_main_text="@string/process_status_tracking_confirm_require"
+                    app:iop_sub_text=""
+                    app:iop_main_text_color="@color/colorGrayApp"
+                    app:iop_main_text_color_finish="@color/colorBlackPrimary" />
+
+                <agv.kaak.vn.kaioken.widget.ItemOrderProcess
+                    android:id="@+id/stepIsProcessingDelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iop_gravity_is_left="false"
+                    app:iop_is_finish="true"
+                    app:iop_main_text="@string/process_status_tracking_processing"
+                    app:iop_sub_text=""
+                    app:iop_main_text_color="@color/colorGrayApp"
+                    app:iop_main_text_color_finish="@color/colorBlackPrimary"/>
+
+                <agv.kaak.vn.kaioken.widget.ItemOrderProcess
+                    android:id="@+id/stepIsShippingDelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iop_gravity_is_left="false"
+                    app:iop_is_finish="true"
+                    app:iop_main_text="@string/process_status_tracking_shipping"
+                    app:iop_sub_text=""
+                    app:iop_main_text_color="@color/colorGrayApp"
+                    app:iop_main_text_color_finish="@color/colorBlackPrimary" />
+
+
+                <agv.kaak.vn.kaioken.widget.ItemOrderProcess
+                    android:id="@+id/stepEndDelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iop_gravity_is_left="false"
+                    app:iop_is_finish="true"
+                    app:iop_main_text="@string/process_status_tracking_send_require_finish"
+                    app:iop_sub_text=""
+                    app:iop_main_text_color="@color/colorGrayApp"
+                    app:iop_main_text_color_finish="@color/colorBlackPrimary"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

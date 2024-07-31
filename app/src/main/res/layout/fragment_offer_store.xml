@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.home.OfferStoreFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackgroundPrimary_4">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lstOffer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutEmptyOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/colorMasterialGrey_3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_offer"
+            android:tint="@color/colorGrayApp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/all_margin_short"
+            android:gravity="center_horizontal"
+            android:text="@string/map_list_offer_empty" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/loadingOffer"
+        layout="@layout/snipper_loading_white_match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    <ProgressBar
+        android:id="@+id/loadingMoreOffer"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/all_margin_long"
+        android:background="@drawable/custom_background_circle_white"
+        android:elevation="3dp"
+        android:indeterminateTint="@color/colorBlackPrimary"
+        android:padding="4dp"
+        android:visibility="gone" />
+</RelativeLayout>

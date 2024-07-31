@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/layoutHeader"
+        layout="@layout/layout_dialog_header_with_back_button" />
+
+    <ScrollView
+        android:id="@+id/svTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutHeader">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/view_spacing"
+                android:paddingLeft="@dimen/view_spacing"
+                android:paddingRight="@dimen/view_spacing"
+                android:paddingTop="@dimen/view_spacing"
+                android:text="@string/finance_choose_form"
+                android:textColor="@color/colorGreenAppPrimary" />
+
+            <RadioGroup
+                android:id="@+id/rgMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvOne"
+                android:layout_marginLeft="@dimen/view_spacing"
+                android:layout_marginRight="@dimen/view_spacing"
+                android:background="@color/colorGrayAppLight"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/view_spacing">
+
+                <RadioButton
+                    android:id="@+id/rbSpendMoney"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/finance_spent_money" />
+
+                <RadioButton
+                    android:id="@+id/rbGetMoney"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/finance_get_money" />
+
+                <RadioButton
+                    android:id="@+id/rbLoanMoney"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/finance_loan" />
+
+                <RadioButton
+                    android:id="@+id/rbDebtMoney"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/finance_debt" />
+
+            </RadioGroup>
+
+            <agv.kaak.vn.kaioken.widget.InputText
+                android:id="@+id/edtContentMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rgMoney"
+                android:inputType="text"
+                android:padding="@dimen/view_spacing"
+                app:it_title="@string/all_content"
+                app:it_content=""
+                app:it_notnull="false"/>
+
+
+            <agv.kaak.vn.kaioken.widget.InputText
+                android:id="@+id/edtMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtContentMoney"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/view_spacing"
+                app:it_title="@string/all_money"
+                app:it_content=""
+                app:it_notnull="false" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSave"
+        style="@style/ButtonPrimary_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/svTask"
+        android:layout_marginTop="@dimen/view_spacing"
+        android:text="@string/all_save_change" />
+
+</RelativeLayout>

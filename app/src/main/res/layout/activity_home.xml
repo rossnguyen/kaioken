@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HomeActivity">
+
+    <ImageButton
+        android:id="@+id/ibtnBorder"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_background_circle_white_border_violet"
+        android:elevation="@dimen/all_masterial_elevation_bottom_nav_bar"
+        android:scaleType="centerCrop"
+        android:tint="@color/colorBlackPrimary" />
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/layoutBottomNavigate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_navigation_height_size_on_map"
+        android:layout_alignParentBottom="true"
+        android:elevation="@dimen/all_masterial_elevation_bottom_nav_bar" />
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="@dimen/scan_button_on_map"
+        android:layout_height="@dimen/scan_button_on_map"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="@dimen/all_masterial_elevation_bottom_nav_bar"
+        app:cardCornerRadius="32dp"
+        app:cardPreventCornerOverlap="true">
+        <RelativeLayout
+            android:id="@+id/layoutScan"
+            android:layout_width="@dimen/scan_button_on_map"
+            android:layout_height="@dimen/scan_button_on_map"
+            android:background="@drawable/custom_background_circle_white_border_black">
+            <ImageButton
+                android:id="@+id/ibtnScan"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/ic_scan_qr_code"
+                android:tint="@color/colorBlackPrimary" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layoutBottomNavigate" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/all_line_split_super_slim"
+        android:layout_above="@id/layoutBottomNavigate"
+        android:background="@color/colorGrayAppLight" />
+</RelativeLayout>

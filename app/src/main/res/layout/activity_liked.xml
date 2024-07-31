@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LikedActivity"
+    android:background="@color/colorBackgroundPrimary_4">
+    <RelativeLayout
+        android:id="@+id/layoutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMasterialGrey_4"
+        android:padding="@dimen/all_padding_short"
+        android:elevation="@dimen/all_masterial_elevation_appbar">
+        <ImageButton
+            android:id="@+id/ibtnBack"
+            android:layout_width="@dimen/all_button_on_top_size"
+            android:layout_height="@dimen/all_button_on_top_size"
+            android:src="@drawable/ic_back"
+            android:background="@drawable/custom_background_button_circle_transparent_gray_when_click"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/all_margin_short"
+            android:layout_toEndOf="@id/ibtnBack"
+            android:layout_centerVertical="true"
+            android:text="@string/promotion_menu_like"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lstLiked"
+        android:layout_below="@id/layoutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:id="@+id/layoutEmptyLiked"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutToolbar"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_heart"
+            android:tint="@color/colorGrayApp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/all_margin_short"
+            android:gravity="center_horizontal"
+            android:text="@string/map_list_follow_empty" />
+    </LinearLayout>
+    <include
+        layout="@layout/snipper_loading_white_match_parent"
+        android:id="@+id/layoutLoading"/>
+
+</RelativeLayout>

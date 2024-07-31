@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layoutRoot"
+    android:layout_marginTop="@dimen/all_margin_short"
+    android:padding="@dimen/all_padding_long"
+    android:background="@drawable/custom_background_5_radius_paper_grey_border_dash">
+    <TextView
+        android:id="@+id/tvNameStore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/medium_size_text"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvDiscount"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/all_padding_short"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_margin="@dimen/all_margin_short"
+            android:background="@drawable/ic_discount_red"
+            android:textColor="@color/colorWhiteApp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/tvDiscount"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextPrimary"/>
+            <TextView
+                android:id="@+id/tvExp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextPrimary" />
+        </LinearLayout>
+        </RelativeLayout>
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextSecondary"/>
+</LinearLayout>

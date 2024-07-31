@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp">
+
+    <ImageView
+        android:id="@+id/imgImageUpload"
+        android:layout_width="@dimen/restaurant_comment_image_upload_size"
+        android:layout_height="@dimen/restaurant_comment_image_upload_size"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:scaleType="fitXY"
+        android:src="@drawable/place_holder_4" />
+    <View
+        android:layout_width="@dimen/restaurant_comment_image_upload_size"
+        android:layout_height="@dimen/restaurant_comment_image_upload_size"
+        android:background="@color/colorMistApp_5"/>
+
+    <ImageButton
+        android:id="@+id/ibtnDelete"
+        android:layout_width="@dimen/restaurant_comment_delete_image_upload_size"
+        android:layout_height="@dimen/restaurant_comment_delete_image_upload_size"
+        android:layout_gravity="top|right"
+        android:background="@drawable/custom_background_button_circle_transparent_white_border"
+        android:scaleType="fitXY"
+        android:padding="5dp"
+        android:layout_margin="3dp"
+        android:src="@drawable/ic_close"
+        android:tint="@color/colorWhiteApp"/>
+
+</FrameLayout>

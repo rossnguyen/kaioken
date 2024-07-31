@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login_2"
+    android:focusableInTouchMode="true"
+    android:layout_marginBottom="-2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/login_padding_left_right"
+                android:paddingRight="@dimen/login_padding_left_right">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/all_margin_short"
+                    android:layout_marginTop="@dimen/all_margin_long"
+                    android:text="@string/all_password"
+                    android:textSize="@dimen/text_view_size"
+                    android:textColor="@color/colorTextPrimary"/>
+
+                <EditText
+                    android:id="@+id/etPassWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_background_5_radius_transparent_border_gray"
+                    android:drawableEnd="@drawable/ic_eye"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/all_padding_short" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/all_margin_short"
+                    android:layout_marginTop="@dimen/all_margin_long"
+                    android:text="@string/all_display_name"
+                    android:textSize="@dimen/text_view_size"
+                    android:textColor="@color/colorTextPrimary"/>
+
+                <EditText
+                    android:id="@+id/edtDisplayName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_background_5_radius_transparent_border_gray"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="@dimen/all_padding_short" />
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/all_padding_short"
+                    android:paddingBottom="@dimen/all_padding_short"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:background="@drawable/custom_background_button_login1"
+                    android:layout_marginTop="@dimen/all_margin_long"
+                    android:text="@string/all_register"
+                    android:textSize="@dimen/text_view_size"
+                    android:textColor="@color/colorWhiteApp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/all_padding_long"
+        android:layout_marginTop="50dp">
+        <ImageView
+            android:id="@+id/imgLogoAddUser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_add_user"
+            android:tint="@color/colorBlackPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/all_margin_short"
+            android:layout_below="@id/imgLogoAddUser"
+            android:layout_centerHorizontal="true"
+            android:text="@string/register_description"
+            android:textSize="@dimen/medium_size_text"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutHandling"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="@dimen/all_loading_size"
+            android:layout_height="@dimen/all_loading_size"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="48dp"
+            app:indicatorColor="@color/colorTextWhiteSecondary"
+            app:indicatorName="BallSpinFadeLoaderIndicator"/>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/ibtnBack"
+        android:layout_width="@dimen/all_button_on_top_size"
+        android:layout_height="@dimen/all_button_on_top_size"
+        android:background="@drawable/custom_background_button_circle_transparent_gray_when_click"
+        android:layout_marginLeft="@dimen/all_margin_short"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_back"
+        android:tint="@color/colorBlackPrimary"/>
+
+    <TextView
+        android:id="@+id/tvTermsAndCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/all_margin_short"
+        android:text="@string/all_terms_and_condition"
+        android:textColorLink="#dfdf68"
+        android:gravity="center_horizontal"
+        android:linksClickable="true"
+        android:textColor="@color/colorTextWhitePrimary"/>
+</RelativeLayout>

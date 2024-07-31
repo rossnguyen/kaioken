@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/all_padding_long">
+
+    <ImageView
+        android:id="@+id/ibtnFacebook"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_facebook"/>
+
+    <ImageButton
+        android:id="@+id/ibtnMessenger"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+        android:layout_marginStart="@dimen/all_margin_long"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_facebook_messenger"/>
+    <ImageButton
+        android:id="@+id/ibtnZalo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:layout_marginStart="@dimen/all_margin_long"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/ic_zalo"
+        android:visibility="gone"/>
+</LinearLayout>

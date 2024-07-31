@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/ibtnLike"
+        android:orderInCategory="100"
+        android:title=""
+        android:icon="@drawable/ic_heart_bold"
+        app:showAsAction="always" />
+</menu>

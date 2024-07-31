@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refreshNotice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMasterialGrey_3"
+    tools:context=".fragment.home.ListNoticeFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lstNotice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:id="@+id/layoutEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/colorMasterialGrey_3"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_message"
+                android:tint="@color/colorGrayApp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/all_margin_short"
+                android:text="@string/track_order_notice_empty"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layoutLoading"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/snipper_loading_white_match_parent"
+            android:visibility="gone"/>
+        <ProgressBar
+            android:id="@+id/loadingMoreNoti"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/all_margin_long"
+            android:background="@drawable/custom_background_circle_white"
+            android:elevation="3dp"
+            android:indeterminateTint="@color/colorBlackPrimary"
+            android:padding="4dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

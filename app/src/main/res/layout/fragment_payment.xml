@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorMasterialGrey_3"
+    android:focusableInTouchMode="true"
+    android:paddingLeft="@dimen/all_padding_long"
+    android:paddingRight="@dimen/all_padding_long"
+    android:paddingBottom="@dimen/all_padding_long"
+    android:paddingTop="@dimen/all_padding_short">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/layoutTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/tvNoBill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Số HD: 12435473521135i1" />
+                <ImageButton
+                    android:id="@+id/ibtnClose"
+                    android:layout_width="@dimen/all_button_on_top_size"
+                    android:layout_height="@dimen/all_button_on_top_size"
+                    android:src="@drawable/ic_close"
+                    android:tint="@color/colorBlackPrimary"
+                    android:background="@drawable/custom_background_button_circle_transparent_gray_when_click"/>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/layoutInfoPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutTop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layoutChoosePaymentType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/all_padding_long">
+
+                        <TextView
+                            android:id="@+id/btnPaymentViaCash"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:padding="@dimen/all_padding_long"
+                            android:background="@drawable/custom_background_5_radius_violet_light"
+                            android:text="@string/all_cash"
+                            android:gravity="center_horizontal"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/medium_size_text"/>
+
+                        <TextView
+                            android:id="@+id/btnPaymentViaKi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/custom_background_5_radius_transparent_border_gray"
+                            android:layout_marginStart="@dimen/all_margin_long"
+                            android:padding="@dimen/all_padding_long"
+                            android:text="0"
+                            android:gravity="center"
+                            android:textSize="@dimen/medium_size_text"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutInfoPaymentContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutSplit1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/all_line_split_medium"
+                        android:background="@color/colorGrayAppLight" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutContentSummaryOrder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/all_padding_long"
+                        android:layout_marginTop="@dimen/all_margin_short">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/custom_background_5_radius_masterial_4_grey_border"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/all_padding_short">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.7"
+                                android:text="@string/payment_sum_bill" />
+
+                            <TextView
+                                android:id="@+id/tvSumMoney"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:gravity="end"
+                                android:text="0"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutDiscount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/all_margin_short"
+                            android:background="@drawable/custom_background_5_radius_masterial_4_grey_border"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/all_padding_short">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.7"
+                                android:text="@string/all_discount" />
+
+                            <TextView
+                                android:id="@+id/tvDiscount"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:gravity="end"
+                                android:text="0"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutExtra"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/all_margin_short"
+                            android:background="@drawable/custom_background_5_radius_masterial_4_grey_border"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/all_padding_short">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.7"
+                                android:text="@string/all_extra" />
+
+                            <TextView
+                                android:id="@+id/tvExtra"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:gravity="end"
+                                android:text="0"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutVAT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/all_margin_short"
+                            android:background="@drawable/custom_background_5_radius_masterial_4_grey_border"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/all_padding_short">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.7"
+                                android:text="@string/all_vat" />
+
+                            <TextView
+                                android:id="@+id/tvVAT"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:gravity="end"
+                                android:text="0"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvAddCoupon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/all_margin_short"
+                            android:background="@drawable/custom_background_button_transparent_gray_when_click"
+                            android:padding="@dimen/all_padding_short"
+                            android:text="@string/payment_use_coupon"
+                            android:textColor="@color/colorPrimaryButton" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/all_margin_short"
+                            android:background="@drawable/custom_background_5_radius_masterial_1"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/all_padding_short">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.7"
+                                android:text="@string/payment_temp_money"
+                                android:textColor="@color/colorBlackPrimary" />
+
+                            <TextView
+                                android:id="@+id/tvFinal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:gravity="end"
+                                android:text="0"
+                                android:textColor="@color/colorBlackPrimary"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutInfoPayment"
+                android:layout_marginTop="@dimen/all_button_margin_top_dialog">
+
+                <Button
+                    android:id="@+id/btnSendRequirePayment"
+                    style="@style/TextButtonPrimary"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/payment_send_require" />
+                <Button
+                    android:id="@+id/btnSeeInvoice"
+                    style="@style/TextButtonPrimary"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/btnSendRequirePayment"
+                    android:text="@string/payment_see_invoice" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+    <include
+        android:id="@+id/layoutLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/snipper_loading_white_match_parent"
+        android:visibility="gone"/>
+
+</FrameLayout>

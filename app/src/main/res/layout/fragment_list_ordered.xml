@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMasterialGrey_3">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lstOrdered"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/layoutEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorMasterialGrey_3"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_eating"
+            android:tint="@color/colorGrayApp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/all_margin_short"
+            android:text="@string/track_order_empty"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layoutLoading"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        layout="@layout/snipper_loading_white_match_parent"
+        android:visibility="gone"/>
+    <ProgressBar
+        android:id="@+id/loadingMore"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/all_margin_long"
+        android:background="@drawable/custom_background_circle_white"
+        android:elevation="3dp"
+        android:indeterminateTint="@color/colorBlackPrimary"
+        android:padding="4dp"
+        android:visibility="gone" />
+</FrameLayout>

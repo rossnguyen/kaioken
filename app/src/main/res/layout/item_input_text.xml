@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMasterialGrey_2"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.35"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/all_padding_short"
+        android:text="@string/payment_discount_code" />
+
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/all_margin_short"
+        android:layout_weight="0.65"
+        android:background="@drawable/custom_background_5_radius_masterial_4_gray_border"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="@dimen/all_padding_short"
+        android:paddingRight="@dimen/all_padding_short"
+        android:gravity="top"
+        android:textColor="@color/colorTextSecondary"/>
+</LinearLayout>

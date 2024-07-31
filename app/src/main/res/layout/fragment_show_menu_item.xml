@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.order.ShowMenuItemFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lstItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMasterialGrey_3"
+        android:layout_marginLeft="@dimen/all_margin_long"
+        android:layout_marginRight="@dimen/all_margin_long"
+        android:overScrollMode="never"/>
+
+</RelativeLayout>

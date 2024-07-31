@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/all_margin_short"
+    android:layout_marginRight="@dimen/all_margin_short"
+    android:layout_marginTop="@dimen/all_margin_short"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutRoot"
+        android:layout_marginBottom="@dimen/all_line_split_super_slim"
+        android:background="@drawable/custom_background_transparent_gray_when_choose">
+
+
+        <ImageView
+            android:id="@+id/imgCover"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/place_holder_4"/>
+
+        <TextView
+            android:id="@+id/tvDiscount"
+            android:layout_width="@dimen/all_button_on_top_size"
+            android:layout_height="@dimen/all_button_on_top_size"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_margin="@dimen/all_margin_short"
+            android:background="@drawable/ic_discount_red"
+            android:textColor="@color/colorWhiteApp"
+            android:textStyle="bold"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgCover">
+            <RelativeLayout
+                android:id="@+id/layoutName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/all_padding_short"
+                android:paddingRight="@dimen/all_padding_short">
+                <TextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#f5e60a"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/all_padding_supper_short"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/ic_star"
+                    android:textStyle="bold"
+                    android:text="5,5" />
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/tvRating"
+                    android:text="Ca phe song que"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorTextVioletPrimary"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layoutAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutName"
+                android:paddingLeft="@dimen/all_padding_short"
+                android:paddingRight="@dimen/all_padding_short"
+                android:layout_marginBottom="@dimen/all_margin_short">
+                <TextView
+                    android:id="@+id/tvDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:drawableStart="@drawable/ic_distance_filled"
+                    android:text="4.5km"/>
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/all_margin_supper_short"
+                    android:textColor="@color/colorTextVioletSecondary"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_toStartOf="@id/tvDistance"
+                    android:text="292/37/18 dinh bo linh"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

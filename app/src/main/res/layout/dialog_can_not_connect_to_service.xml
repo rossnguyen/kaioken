@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/all_padding_long">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_conect_socket_error"/>
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/all_margin_long"
+            android:text="@string/dialog_cannot_connect_to_socket"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnOk"
+        style="@style/TextButtonPrimary"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/all_button_margin_top_dialog"
+        android:text="@string/all_close"/>
+</LinearLayout>

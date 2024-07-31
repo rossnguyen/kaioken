@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.order.ChooseOrderFragment">
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/layoutBottomNavigate"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_gravity="bottom"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/layoutChart"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_navigation_height_size"
+        android:layout_gravity="bottom"
+        android:background="@drawable/custom_background_button_contained_0_radius"
+        android:backgroundTint="@color/colorGrayAppDark">
+
+        <TextView
+            android:id="@+id/tvSummaryQuantity"
+            android:layout_width="@dimen/item_choose_food_summary_quantity"
+            android:layout_height="@dimen/item_choose_food_summary_quantity"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/all_margin_long"
+            android:background="@drawable/custom_background_button_transparent_white_border"
+            android:gravity="center"
+            android:textColor="@color/colorWhiteApp" />
+
+        <TextView
+            android:id="@+id/tvSumMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/all_margin_long"
+            android:textColor="@color/colorWhiteApp"
+            android:textSize="@dimen/all_button_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTitleNavigate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/choose_food_see_chart"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhiteApp"
+            android:textSize="@dimen/all_button_text_size" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/layoutLoading"
+        layout="@layout/snipper_loading_white_match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layoutChooseOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/bottom_navigation_height_size" />
+
+</FrameLayout>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layoutForMainContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/layoutToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMasterialGrey_4"
+                android:elevation="@dimen/all_masterial_elevation_appbar"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="@dimen/all_padding_short">
+
+                <ImageButton
+                    android:id="@+id/ibtnAdjust"
+                    android:layout_width="@dimen/all_button_on_top_size"
+                    android:layout_height="@dimen/all_button_on_top_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_background_button_circle_transparent_gray_when_click"
+                    android:clickable="true"
+                    android:padding="@dimen/all_padding_short"
+                    android:scaleType="fitXY"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    android:src="@drawable/ic_filter"
+                    android:tint="@color/colorPrimaryButton" />
+
+                <ImageButton
+                    android:id="@+id/ibtnMode"
+                    android:layout_width="@dimen/all_button_on_top_size"
+                    android:layout_height="@dimen/all_button_on_top_size"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_background_button_circle_material4_gray_when_click"
+                    android:clickable="true"
+                    android:padding="@dimen/all_padding_short"
+                    android:scaleType="fitXY"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    android:src="@drawable/ic_list_task"
+                    android:tint="@color/colorPrimaryButton" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/all_margin_short"
+                    android:layout_marginStart="@dimen/all_margin_short"
+                    android:layout_toEndOf="@id/ibtnMode"
+                    android:layout_toStartOf="@id/ibtnAdjust"
+                    android:background="@drawable/custom_background_5_radius_masterial_2"
+                    android:paddingRight="@dimen/all_padding_short">
+                    <TextView
+                        android:id="@+id/tvDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="@dimen/small_size_text"
+                        android:textColor="@color/colorTextSecondary"
+                        android:drawableStart="@drawable/ic_target"
+                        android:layout_centerVertical="true"
+                        android:text="300m"/>
+
+                    <TextView
+                        android:id="@+id/tvCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/custom_background_4_radius_violet"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="2dp"
+                        android:text="Coffee"
+                        android:textColor="@color/colorPrimaryButton" />
+
+                    <TextView
+                        android:id="@+id/tvSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/all_margin_short"
+                        android:layout_toEndOf="@id/tvCategory"
+                        android:layout_toStartOf="@id/tvDistance"
+                        android:layout_marginEnd="@dimen/all_margin_supper_short"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@+id/tvEmptySearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/all_margin_short"
+                        android:layout_toEndOf="@id/tvCategory"
+                        android:singleLine="true"
+                        android:text="@string/map_search_name_store" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutOffer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/layoutToolbar">
+
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/refreshStoreVertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBackgroundPrimary_4">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/lstStoreVertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </android.support.v4.widget.SwipeRefreshLayout>
+
+                <ProgressBar
+                    android:id="@+id/loadingMoreStoreVertical"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/all_margin_long"
+                    android:background="@drawable/custom_background_circle_white"
+                    android:elevation="3dp"
+                    android:indeterminateTint="@color/colorBlackPrimary"
+                    android:padding="4dp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutNoteVertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="@dimen/all_padding_long"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:paddingTop="@dimen/all_padding_long"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutNoResultVertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvTitleNoResultVertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Không tìm được kết quả"
+                            android:textSize="@dimen/medium_size_text"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvMessageNoResultVertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvTitleNoResultVertical"
+                            android:layout_marginTop="@dimen/all_margin_short"
+                            android:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/btnExpandScopeVertical"
+                            style="@style/OutlinedButtonPrimary"
+                            android:layout_below="@id/tvMessageNoResultVertical"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/all_margin_short"
+                            android:text="@string/map_expand_area" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/layout_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/layoutToolbar"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/all_margin_short"
+                    android:animateLayoutChanges="true">
+
+                    <com.yarolegovich.discretescrollview.DiscreteScrollView
+                        android:id="@+id/lstStoreHorizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:overScrollMode="never"
+                        app:dsv_orientation="horizontal" />
+
+                    <ProgressBar
+                        android:id="@+id/loadingMore"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/all_margin_short"
+                        android:background="@drawable/custom_background_circle_white"
+                        android:elevation="3dp"
+                        android:indeterminateTint="@color/colorBlackPrimary"
+                        android:padding="4dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="@dimen/all_margin_short"
+                    android:background="@color/colorMasterialGrey_4"
+                    android:paddingBottom="@dimen/all_padding_long"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:paddingTop="@dimen/all_padding_long"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutNoResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvTitleNoResult"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Không tìm được kết quả"
+                            android:textSize="@dimen/medium_size_text"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvMessageNoResult"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvTitleNoResult"
+                            android:layout_marginTop="@dimen/all_margin_short"
+                            android:text="Không tìm thấy kết quả tìm kiếm quán cà phê trong khoảng cách 100m."
+                            android:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/btnExpandScope"
+                            style="@style/OutlinedButtonPrimary"
+                            android:layout_below="@id/tvMessageNoResult"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/all_margin_short"
+                            android:text="@string/map_expand_area" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loadingSearch"
+                    style="@style/AVLoadingIndicatorView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    app:indicatorColor="@color/colorPrimaryButton"
+                    app:indicatorName="BallScaleMultipleIndicator" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutForFragmentSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+
+    <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navRight"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end">
+
+        <RelativeLayout
+            android:id="@+id/layoutAdjustSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorMasterialGrey_4" />
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+

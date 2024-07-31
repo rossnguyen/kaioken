@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorMasterialGrey_3"
+    android:padding="@dimen/all_padding_long">
+
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMasterialGrey_3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/all_padding_long">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_choose_type_title"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/medium_size_text"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/all_margin_long"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnLocal"
+                style="@style/OutlinedButtonPrimary"
+                android:layout_width="match_parent"
+                android:text="@string/dialog_choose_type_use_local" />
+
+            <Button
+                android:id="@+id/btnBook"
+                style="@style/OutlinedButtonPrimary"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/all_margin_short"
+                android:enabled="false"
+                android:text="@string/dialog_choose_type_book" />
+
+            <Button
+                android:id="@+id/btnDelivery"
+                style="@style/OutlinedButtonPrimary"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/all_margin_short"
+                android:enabled="false"
+                android:text="@string/dialog_choose_type_delivery" />
+        </LinearLayout>
+    </LinearLayout>
+    <include
+        android:id="@+id/layoutLoading"
+        layout="@layout/snipper_loading_white_match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>

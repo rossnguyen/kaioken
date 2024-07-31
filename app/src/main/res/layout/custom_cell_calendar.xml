@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_cell"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_background_transparent_gray_light_border"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/all_padding_short">
+
+    <TextView
+        android:id="@+id/tvDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgMoney"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_gravity="end"
+        android:background="@drawable/custom_background_button_circle_red"
+        android:visibility="visible" />
+
+</LinearLayout>

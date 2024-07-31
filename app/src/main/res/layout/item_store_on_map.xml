@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    app:cardCornerRadius="@dimen/all_corner_long">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+            <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorMistApp_5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <FrameLayout
+                        android:id="@+id/layoutDiscount"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/ic_discount_red">
+
+                        <TextView
+                            android:id="@+id/tvDiscount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20%"
+                            android:textColor="@color/colorWhiteApp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="10sp" />
+                    </FrameLayout>
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/layoutDiscount"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:paddingLeft="@dimen/all_padding_short"
+                        android:paddingRight="@dimen/all_padding_short"
+                        android:text="Cafe Sông quê"
+                        android:textColor="@color/colorWhiteApp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/all_padding_short">
+
+                    <ImageView
+                        android:id="@+id/imgDistance"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginBottom="2dp"
+                        android:src="@drawable/ic_distance_filled"
+                        android:tint="@color/colorMasterialGrey_3"
+                        android:layout_alignParentBottom="true"/>
+
+                    <TextView
+                        android:id="@+id/tvDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/imgDistance"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="2dp"
+                        android:text="300m"
+                        android:textColor="@color/colorMasterialGrey_3"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imgStar"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginBottom="4dp"
+                        android:src="@drawable/ic_star"
+                        android:tint="@color/colorMasterialGrey_3"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"/>
+
+                    <TextView
+                        android:id="@+id/tvRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@id/imgStar"
+                        android:layout_marginRight="2dp"
+                        android:text="9.3"
+                        android:textColor="@color/colorMasterialGrey_3"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

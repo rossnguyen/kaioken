@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/all_padding_long">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/big_size_text"
+        tools:text="Title" />
+
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/all_margin_short"
+        android:background="@drawable/custom_background_5_radius_transparent_border_gray"
+        android:padding="@dimen/all_padding_short" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/all_margin_long">
+
+        <Button
+            android:id="@+id/btnPositive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ContainedButton"
+            android:backgroundTint="@color/colorPrimaryButton"
+            android:layout_alignParentEnd="true"
+            android:text="Positive"
+            android:textColor="@color/colorWhiteApp" />
+
+        <Button
+            android:id="@+id/btnNegative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextButton"
+            android:padding="@dimen/all_padding_short"
+            android:layout_toStartOf="@id/btnPositive"
+            android:layout_marginEnd="@dimen/all_margin_long"
+            android:text="Negative"
+            android:textColor="@color/colorPrimaryButton" />
+    </RelativeLayout>
+
+</LinearLayout>

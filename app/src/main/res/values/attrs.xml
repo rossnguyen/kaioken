@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextviewWithImageAbove">
+        <attr name="twia_text" format="string" />
+        <attr name="twia_text_color" format="color" />
+        <attr name="twia_text_size" format="dimension" />
+        <attr name="twia_src" format="reference" />
+        <attr name="twia_src_size" format="dimension" />
+        <attr name="twia_src_tint" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ToolbarCustom">
+        <attr name="tc_title" format="string" />
+        <attr name="tc_title_color" format="color" />
+        <attr name="tc_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewKMoney">
+        <attr name="tvkm_text" format="string" />
+        <attr name="tvkm_text_size" format="dimension" />
+        <attr name="tvkm_text_color" format="color" />
+        <attr name="tvkm_k_size" format="dimension" />
+        <attr name="tvkm_k_color" format="color" />
+        <attr name="tvkm_is_bold" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ItemOrderProcess">
+        <attr name="iop_main_text" format="string" />
+        <attr name="iop_main_text_color" format="color" />
+        <attr name="iop_main_text_color_finish" format="color" />
+        <attr name="iop_main_text_size" format="dimension" />
+        <attr name="iop_sub_text" format="string" />
+        <attr name="iop_sub_text_color" format="color" />
+        <attr name="iop_sub_text_size" format="dimension" />
+        <attr name="iop_gravity_is_left" format="boolean" />
+        <attr name="iop_is_finish" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewWithIcon">
+        <attr name="tvwi_src" format="reference" />
+        <attr name="tvwi_src_tint" format="color" />
+        <attr name="tvwi_src_size" format="dimension" />
+        <attr name="tvwi_text" format="string" />
+        <attr name="tvwi_text_sub" format="string"/>
+        <attr name="tvwi_text_color" format="color" />
+        <attr name="tvwi_text_size" format="dimension" />
+        <attr name="tvwi_sub_size" format="dimension" />
+        <attr name="tvwi_text_navigate" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="InputText">
+        <attr name="android:inputType"/>
+        <attr name="android:imeOptions"/>
+        <attr name="it_title" format="string" />
+        <attr name="it_content" format="string" />
+        <attr name="it_notnull" format="boolean" />
+        <attr name="it_lines" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ChooseNumberView">
+        <attr name="cnv_height" format="dimension"/>
+        <attr name="cnv_background_color" format="color"/>
+        <attr name="cnv_text_button_color" format="color"/>
+        <attr name="cnv_text_value_color" format="color"/>
+        <attr name="cnv_background_value_color" format="color"/>
+        <attr name="cnv_text_button_size" format="dimension"/>
+        <attr name="cnv_text_value_size" format="dimension"/>
+        <attr name="cnv_value" format="integer"/>
+    </declare-styleable>
+
+</resources>

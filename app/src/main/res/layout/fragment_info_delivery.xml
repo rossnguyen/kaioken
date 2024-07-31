@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMasterialGrey_3">
+
+    <RelativeLayout
+        android:id="@+id/layoutConfirmDelivery"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_navigation_height_size"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhiteApp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/all_line_split_super_slim"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorGrayAppLight" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            style="@style/ContainedButtonPrimary"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/all_margin_short"
+            android:layout_marginRight="@dimen/all_margin_short"
+            android:backgroundTint="@color/colorVioletPrimary"
+            android:text="@string/all_confirm" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layoutConfirmDelivery">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/all_margin_short">
+
+                <RelativeLayout
+                    android:id="@+id/layoutManageOrdering"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/layoutInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/all_margin_short">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/all_padding_short"
+                        android:text="@string/payment_delivery_info" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/all_line_split_super_slim"
+                        android:background="@color/colorGrayAppLight"/>
+
+                    <include layout="@layout/layout_delivery_info"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <include
+        android:id="@+id/layoutLoading"
+        layout="@layout/sniper_loading_transparent_match_parent"
+        android:visibility="gone"/>
+</RelativeLayout>

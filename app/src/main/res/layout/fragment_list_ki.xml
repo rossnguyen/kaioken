@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundPrimary_4"
+    android:orientation="vertical"
+    tools:context=".fragment.home.ListKiFragment">
+
+    <RelativeLayout
+        android:id="@+id/layoutDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMasterialGrey_4"
+        android:padding="@dimen/all_padding_short">
+
+        <ImageButton
+            android:id="@+id/ibtnBack"
+            android:layout_width="@dimen/all_button_on_top_size"
+            android:layout_height="@dimen/all_button_on_top_size"
+            android:src="@drawable/ic_back"
+            android:background="@drawable/custom_background_button_circle_transparent_gray_when_click"
+            android:tint="@color/colorBlackPrimary" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/all_margin_short"
+            android:layout_toEndOf="@id/ibtnBack"
+            android:text="@string/ki_description" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/split"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/all_line_split_super_slim"
+        android:background="@color/colorGrayAppLight"
+        android:layout_below="@id/layoutDescription"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/all_padding_short"
+        android:paddingRight="@dimen/all_padding_short"
+        android:layout_below="@id/split">
+
+        <GridView
+            android:id="@+id/gridKiStore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="@dimen/all_margin_short"
+            android:verticalSpacing="@dimen/all_margin_short"
+            android:paddingTop="@dimen/all_padding_short"
+            android:paddingBottom="@dimen/all_padding_short"
+            android:clipToPadding="false"
+            android:scrollbars="none"/>
+
+        <LinearLayout
+            android:id="@+id/layoutEmptyKi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_ki_coint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/all_margin_short"
+                android:gravity="center_horizontal"
+                android:text="@string/ki_empty" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layoutLoading"
+            layout="@layout/snipper_loading_white_match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+</RelativeLayout>

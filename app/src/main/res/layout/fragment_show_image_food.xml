@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:gravity="center_vertical"
+    android:paddingTop="24dp">
+    <RelativeLayout
+        android:id="@+id/layoutThumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorMistApp_1"
+        android:padding="@dimen/all_padding_short"
+        android:layout_marginBottom="@dimen/all_show_slide_image_margin_top">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lstThumbnails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutMainImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/all_show_slide_image_margin_top"
+        android:layout_above="@id/layoutThumbnail">
+        <agv.kaak.vn.kaioken.widget.ImageZoomableViewPager
+            android:id="@+id/vpPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"/>
+        <ImageButton
+            android:id="@+id/ibtnFullScreen"
+            android:layout_width="@dimen/all_button_on_top_size"
+            android:layout_height="@dimen/all_button_on_top_size"
+            android:background="@drawable/custom_background_button_transparent_black_when_click"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/all_margin_short"
+            android:src="@drawable/ic_fullscreen"
+            android:tint="@color/colorWhiteApp"/>
+        <ImageButton
+            android:id="@+id/ibtnScaleScreen"
+            android:layout_width="@dimen/all_button_on_top_size"
+            android:layout_height="@dimen/all_button_on_top_size"
+            android:background="@drawable/custom_background_button_transparent_black_when_click"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/all_margin_short"
+            android:src="@drawable/ic_scale_screen"
+            android:tint="@color/colorWhiteApp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/ibtnClose"
+        android:layout_width="@dimen/all_button_on_top_size"
+        android:layout_height="@dimen/all_button_on_top_size"
+        android:layout_margin="@dimen/all_margin_short"
+        android:background="@drawable/custom_background_button_circle_transparent_black_when_click"
+        android:src="@drawable/ic_close"
+        android:tint="@color/colorWhiteApp"/>
+
+
+</RelativeLayout>

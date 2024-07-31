@@ -1,0 +1,732 @@
+<resources>
+    <string name="app_name">Kaioken</string>
+    <string name="google_maps_key">AIzaSyCJTb1tezf_J7jxI3hyyX6zLO938BjNGRE</string>
+    <string name="facebook_app_id">250222255760408</string>
+    <string name="zalo_app_id">3655931698471355249</string>
+    <string name="default_notification_channel_id">KAIOKEN</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- global string -->
+    <string name="all_copyright">Powered by <b>AGV</b></string>
+    <string name="all_ok">Đồng ý</string>
+    <string name="all_not_ok">Không đồng ý</string>
+    <string name="all_cancel">Hủy bỏ</string>
+    <string name="all_cancel_choose">Huỷ chọn</string>
+    <string name="all_close">Đóng</string>
+    <string name="all_known">Đã hiểu</string>
+    <string name="all_return_home">Quay về trang chính</string>
+    <string name="all_feature_is_developing">Tính năng đang được phát triển</string>
+    <string name="all_get_data_fail_message">Lấy thông tin thất bại</string>
+    <string name="all_menu">Thực đơn</string>
+    <string name="all_info">Thông tin</string>
+    <string name="all_image">Hình ảnh</string>
+    <string name="all_call_waiter">Gọi phục vụ</string>
+    <string name="all_pieces">phần</string>
+    <string name="all_confirm">Xác nhận</string>
+    <string name="all_send_comment">Gửi phản hồi</string>
+    <string name="all_later">Để sau</string>
+    <string name="all_message_handling">Đang tiến hành xử lý&#8230;</string>
+    <string name="all_sum">Tổng</string>
+    <string name="all_payment">Thanh Toán</string>
+    <string name="all_add_food">Thêm món</string>
+    <string name="all_final_money">Tổng cộng</string>
+    <string name="all_staff">Nhân viên</string>
+    <string name="all_minutes">Phút</string>
+    <string name="all_finish">Hoàn tất</string>
+    <string name="something_went_wrong">Có lỗi xảy ra</string>
+    <string name="all_rating_success">Đánh giá thành công</string>
+    <string name="all_rating_fail">Đánh giá thất bại</string>
+    <string name="all_discount">Giảm giá</string>
+    <string name="all_extra">Phụ thu</string>
+    <string name="all_vat">VAT</string>
+    <string name="all_get_list_image_fail">Lấy danh sách hình ảnh thất bại</string>
+    <string name="all_slogan">Gọi món ăn\n chưa bao giờ đơn giản đến thế</string>
+    <string name="all_connecting_to_server">Đang kết nối đến máy chủ&#8230;</string>
+    <string name="all_reconnect">Kết nối lại</string>
+    <string name="all_send_require">Gửi yêu cầu</string>
+    <string name="all_distance">Cách bạn</string>bạn
+    <string name="all_km">km</string>
+    <string name="all_m">m</string>
+    <string name="all_your_location">Vị trí của bạn</string>
+    <string name="all_content">Nội dung</string>
+    <string name="all_quantity">Số lượng</string>
+    <string name="all_comment">Bình luận</string>
+    <string name="all_upload_image_fail">Tải ảnh lên thất bại</string>
+    <string name="all_ho_chi_minh_city">Tp.Hồ Chí Minh</string>
+    <string name="all_no_result">Không tìm được kết quả</string>
+    <string name="all_found">Tìm thấy</string>
+    <string name="all_result">kết quả</string>món
+    <string name="all_scan_code">Quét mã</string>
+    <string name="all_login">Đăng nhập</string>
+    <string name="all_start">Bắt đầu</string>
+    <string name="all_name_customer">Tên khách hàng</string>
+    <string name="all_phone_number">Số điện thoại</string>
+    <string name="all_note">Ghi chú</string>
+    <string name="all_add_note">Thêm ghi chú</string>
+    <string name="all_address">Địa chỉ</string>
+    <string name="all_coordinates">Toạ độ</string>
+    <string name="all_cash">Tiền mặt</string>
+    <string name="all_visa">Visa</string>
+    <string name="all_must_to_enter">Không được bỏ trống</string>
+    <string name="all_must_enter_digit">Bắt buộc phải nhập số</string>
+    <string name="all_password">Mật khẩu</string>
+    <string name="all_display_name">Tên hiển thị</string>
+    <string name="all_register">Đăng ký</string>
+    <string name="all_continue">Tiếp tục</string>
+    <string name="all_sented">Đã gửi</string>
+    <string name="all_try_again">Thử lại</string>
+    <string name="all_sex">Giới tính</string>
+    <string name="all_day_of_birth">Ngày sinh</string>
+    <string name="all_save_change">Lưu thay đổi</string>
+    <string name="all_save">Lưu</string>
+    <string name="all_email_address">Email</string>
+    <string name="all_logout">Đăng xuất</string>
+    <string name="all_edit">Sửa</string>
+    <string name="all_update_success">Cập nhật thành công</string>
+    <string name="all_check">Kiểm tra</string>
+    <string name="all_see_detail_store">Chi tiết cửa hàng</string>
+    <string name="all_see_detail_order">Chi tiết đơn hàng</string>
+    <string name="all_address_delivery">Địa chỉ giao hàng</string>
+    <string name="all_order">Đơn hàng</string>
+    <string name="all_notice">Thông báo</string>
+    <string name="all_history">Lịch sử</string>
+    <string name="all_add">Thêm</string>
+    <string name="all_chart">Biểu đồ</string>
+    <string name="all_delete">Xóa</string>
+    <string name="all_do_you_want_to_delete_this_item">Bạn có chắc muốn xoá dữ liệu này?</string>
+    <string name="all_no">Không</string>
+    <string name="all_choose_max_images">Chỉ được chọn tối đa %d hình</string>
+    <string name="all_money">Số tiền</string>
+    <string name="all_cannot_process">Không thể thực hiện</string>
+    <string name="all_saved">Đã lưu</string>
+    <string name="all_deleted_successfully">Xóa thành công</string>
+    <string name="all_delete_fail">Xoá thất bại</string>
+    <string name="all_customer">Khách hàng</string>
+    <string name="all_table">Bàn</string>
+    <string name="all_cashier">Thu ngân</string>
+    <string name="all_surcharge">Phụ thu</string>
+    <string name="all_received_money">Tiền nhận</string>
+    <string name="all_excess_money">Tiền thừa</string>
+    <string name="all_print">In</string>
+    <string name="all_no_connected_printer">Không có máy in được kết nối</string>
+    <string name="all_rate">Đánh giá</string>
+    <string name="all_day_at">%d Tháng %d lúc %d:%02d</string>
+    <string name="all_today_at">%02d:%02d</string>
+    <string name="all_yesterday_at">Hôm qua lúc %d:%02d</string>
+    <string name="all_x_day_before">%,d ngày trước</string>
+    <string name="all_x_hour_before">%,d giờ trước</string>
+    <string name="all_x_minus_before">%,d phút trước</string>
+    <string name="all_ki">Ki</string>
+    <string name="all_i_have_coupon">Tôi có mã giảm giá</string>
+    <!--<string name="all_error_global">Có lỗi xảy ra\nVui lòng thử lại sau.</string>-->
+    <string name="all_error_global">Tải dữ liệu thất bại</string>
+    <string name="all_please_try_again">Vui lòng thử lại sau</string>
+    <string name="all_not_connected">Không có kết nối</string>
+    <string name="all_connect_success">Kết nối thành công</string>
+    <string name="all_connecting">Đang kết nối&#8230;</string>
+    <string name="all_can_not_find_address">Không tìm được địa chỉ</string>
+    <string name="all_unknown">Không xác định</string>
+    <string name="all_all">Tất cả</string>
+    <string name="all_promotion">Khuyến mãi</string>
+    <string name="all_news">Tin tức</string>
+    <string name="all_introduce">Giới thiệu</string>
+    <string name="all_terms_and_condition">Tiếp tục nghĩa là bạn đồng ý \n với các <a href="https://kaioken.vn">điều khoản</a> sử dụng Kaioken</string>
+    <string name="all_size_s">Size S</string>
+    <string name="all_size_m">Size M</string>
+    <string name="all_size_l">Size L</string>
+    <string name="all_cart">Giỏ hàng</string>
+    <string name="all_done">Xong</string>
+    <string name="all_to">đến</string>
+    <string name="all_excess">Còn lại</string>
+
+
+    <!-- string for spotlight -->
+    <string name="spotlight_qr_title">Quét để gọi món</string>
+    <string name="spotlight_qr_content">Quét mã QR trên bàn để xem thực đơn và gọi gọi món</string>
+    <string name="spotlight_offer_title">Cửa hàng gợi ý</string>
+    <string name="spotlight_offer_content">Xem danh sách các cửa hàng gợi ý, đang khuyến mãi</string>
+    <string name="spotlight_category_title">Danh mục cửa hàng</string>
+    <string name="spotlight_category_content">Chọn loại cửa hàng bạn muốn tìm kiếm</string>
+    <string name="spotlight_follow_title">Yêu thích</string>
+    <string name="spotlight_follow_content">Xem danh sách cửa hàng bạn yêu thích và đang theo dõi</string>
+    <string name="spotlight_mode_show_title">Chọn chế độ xem</string>
+    <string name="spotlight_mode_show_content">Chuyển đổi giữa chế độ xem trên bản đồ và xem theo danh sách</string>
+
+
+    <!-- string for format-->
+    <string name="format_distance_x">Cách bạn: %s</string>bạn
+    <string name="format_money_long">%,dk</string>
+    <string name="format_x_percent">%d%%</string>
+    <string name="format_x_k">%dk</string>
+    <string name="format_x_k_double">%.3fK</string>
+    <string name="format_x_k_float">%.1fK</string>
+    <string name="format_x_ki">%d Ki</string>
+    <string name="format_money_long_with_negative_signal">-%,dk</string>
+    <string name="format_sum_x_k">Tổng: %,dK</string>
+    <string name="format_sum_x_k_string">Tổng: %s</string>
+    <string name="format_time_x_seconds">%d giây</string>
+    <string name="format_invoice_no_x">Số HĐ: %s</string>
+    <string name="format_sum_and_species">%d phần: %dK</string>
+    <string name="format_sum_x_quantity">Tổng <b>%d</b> phần</string>
+    <string name="format_staff_x">Nhân viên - %s</string>
+    <string name="format_delete_x">Xoá (%d)</string>
+    <string name="format_coupon_code">Mã giảm giá: <b>%s</b></string>
+    <string name="format_coupon_exp">Sử dụng đến: <b>%s</b></string>
+    <string name="format_sum_bill">Tổng hoá đơn: %dk</string>
+    <string name="format_discount_x_k">Giảm giá: %dK</string>
+
+    <!-- global string for dialog -->
+    <string name="dialog_require_network_message">Không có kết nối đến Internet\nVui lòng kiểm tra lại đường truyền</string>
+    <string name="dialog_cannot_connect_to_socket">Không thể kết nối được với máy chủ\nVui lòng thử lại sau.</string>
+
+
+    <string name="sorry_message">Rất xin lỗi vì sự bất tiện này!</string>
+    <string name="press_once_to_exit">Nhấn lần nữa để thoát</string>
+    <string name="dialog_have_new_version_message">Đã có phiên bản mới, vui lòng cập nhật ứng dụng để tiếp tục sử dụng.</string>
+    <string name="dialog_choose_type_use_local">Dùng tại quán</string>
+    <string name="dialog_choose_type_delivery">Giao hàng</string>
+    <string name="dialog_choose_type_book">Đặt chỗ</string>
+    <string name="dialog_choose_type_title">Chọn loại hình sử dụng</string>
+    <string name="dialog_require_permission_location_message">Vui lòng bật GPS để tiếp tục.</string>
+
+    <!--string for splash activity-->
+    <string name="request_permission"><b>KAIOKEN</b> cần một số quyền để có thể chạy ứng dụng:</string>
+    <string name="request_permission_explain_camera"><b>Máy ảnh:</b> dùng để quét mã QR</string>
+    <string name="request_permission_explain_location"><b>Vị trí:</b> dùng để tìm kiếm cửa hàng quanh bạn</string>
+    <string name="request_permission_explain">Chúng tôi cam kết chỉ sử dụng quyền máy ảnh và vị trí để phục vụ cho ứng dụng</string>
+    <string name="request_permission_draw_all">Chúng chỉ sử dụng quyền vẽ trên toàn màn hình để hiển thị thông báo cho bạn</string>
+
+    <!--string for mode use -->
+    <string name="mode_use_annonymous">Quét và gọi món</string>
+    <string name="mode_use_description">Đăng nhập để sử dụng nhiều tính năng hơn</string>
+    <string name="mode_use_session_invalid_message">Phiên hoạt động đã hết hạn\nVui lòng đăng nhập lại</string>
+
+    <!-- string for loading -->
+    <string name="loading_get_location">Đang xác định vị trí của bạn</string>liệu
+    <string name="loading_get_data">Đang tải dữ liệu&#8230;</string>
+
+    <!-- string for force logout -->
+    <string name="force_logout_message_1">Tài khoản của bạn vừa được đăng nhập trên thiết bị khác</string>
+    <string name="force_logout_message_2">Nếu đây không phải là bạn, vui lòng đổi mật khẩu sau khi đăng nhập lại để đảm bảo an toàn.</string>
+    <string name="alert_token_invalid_message">Phiên hoạt động của bạn không còn hợp lệ, vui lòng đăng nhập lại.\nLần đăng nhập gần nhất trên thiết bị:</string>
+
+
+    <!-- string for scan -->
+    <string name="scan_fragment_description">Quét mã QR trên bàn \nđể tự đặt món và gọi phục vụ</string>
+    <string name="scan_can_not_detect">Không thể nhận diện được mã</string>
+    <string name="scan_qr">Quét mã QR</string>
+    <string name="scan_my_qr_code"><b>QR của tôi</b></string>
+    <string name="scan_collect_money"><b>Thu tiền</b></string>
+    <string name="scan_image"><b>Quét ảnh</b></string>
+    <string name="scan_now">Quét ngay</string>lại
+    <string name="scan_rescan">Quét lại</string>
+    <string name="scan_fail_cause_location">Chưa xác định được vị trí của bạn</string>
+
+    <!-- string for Ki -->
+    <string name="ki_description">Sử dụng số <b>Ki</b> tích luỹ để thanh toán cho những đơn hàng sau này.</string>
+    <string name="ki_get_list_ki_fail">Tải danh sách ki thất bại</string>
+    <string name="ki_empty">Bạn chưa có <b>Ki</b> nào để sử dụng.</string>
+    <string name="ki_put">Ki trả</string>
+    <string name="ki_excess">Ki còn lại</string>
+    <string name="ki_ki_saved">Danh sách ki đã tích</string>
+    <string name="ki_my_coupon">Mã giảm giá của tôi</string>
+    <string name="ki_my_list_coupon">Danh sách mã giảm giá của bạn</string>
+    <string name="ki_expland">Tích điểm bằng cách tự order trên Kaioken app hoặc quét mã đơn hàng để tích điểm</string>
+    <string name="ki_my_qr_code">Mã QR của tôi</string>
+
+    <!-- string for about -->
+    <string name="about_powered_by_agv">Phát triển bởi <b>AGV</b></string>
+    <string name="about_version">Phiên bản: %s</string>
+    <string name="about_hotline">0904 944 112</string>
+    <string name="about_email">info@kaioken.vn</string>
+    <string name="about_website">https://kaioken.vn</string>
+
+    <!-- string for order -->
+    <string name="choose_food_add_note_title">Nhập nội dung ghi chú</string>
+    <string name="choose_food_call_waiter">Gọi phục vụ</string>
+    <string name="call_waiter_what_do_you_want">Bạn muốn yêu cầu gì?</string>
+    <string name="call_waiter_hint">Nhập vào lý do gọi phục vụ…</string>
+    <string name="call_waiter_enter_content_error">Vui lòng nhập vào nội dung</string>
+    <string name="call_waiter_success">Gởi yêu cầu thành công</string>
+    <string name="call_waiter_fail">Gởi yêu cầu thất bại, vui lòng thử lại</string>
+    <string name="call_waiter_say_require">Nói yêu cầu của bạn</string>
+    <string name="call_waiter_not_detect_voice">Không thể nhận diện yêu cầu</string>
+    <string name="choose_food_search_hint">Tìm theo tên món ăn</string>
+    <string name="choose_food_send_order">Gởi đơn hàng</string>
+    <string name="choose_food_enter_info_book">Nhập thông tin đặt chỗ</string>
+    <string name="choose_food_enter_info_delivery">Nhập thông tin giao hàng</string>
+    <string name="choose_food_see_chart">Xem giỏ hàng</string>
+    <string name="choose_food_create_order_fail">Gọi món thất bại</string>
+    <string name="choose_food_at_least_one_item">Vui lòng chọn món để tiếp tục</string>
+    <string name="choose_food_not_have_item">Chưa chọn món</string>
+    <string name="delivery_destination">Giao đến</string>
+    <string name="delivery_my_location">Vị trí của tôi</string>
+    <string name="delivery_address_specify">Địa chỉ cụ thể</string>
+    <string name="delivery_address">Địa chỉ giao hàng</string>
+    <string name="delivery_enter_address">Nhập vào địa chỉ</string>
+    <string name="delivery_choose_time">Chọn thời gian</string>
+    <string name="delivery_not_choosed_my_location">Vui lòng chọn toạ độ của bạn</string>
+    <string name="delivery_not_enter_address">Vui lòng nhập địa chỉ giao hàng</string>
+    <string name="delivery_please_choose_address">Vui lòng chọn địa chỉ giao đến</string>
+    <string name="order_item_is_null">Vui lòng chọn món trước khi gửi</string>
+    <string name="delivery_coordinates_selected">Giao đến địa chỉ này</string>
+    <string name="choose_order_choose_size">Chọn size</string>
+
+    <!-- string for payment -->
+    <string name="payment_type_payment">Hình thức thanh toán</string>
+    <string name="payment_discount_code">Mã giảm giá</string>
+    <string name="payment_book_count_customer">Số lượng khách</string>
+    <string name="payment_book_arrival_time">Thời gian đến</string>
+    <string name="payment_detail_order">Chi tiết đơn hàng</string>
+    <string name="payment_book_info">Thông tin đặt chỗ</string>
+    <string name="payment_book_date_arrival_invalid">Ngày đặt chỗ phải lớn hơn hoặc bằng ngày hiện tại</string>
+    <string name="payment_book_date_time_arrival_invalid">Ngày giờ đặt chỗ phải lớn hơn hoặc bằng ngày hiện tại</string>
+    <string name="payment_book_date_time_arrival_must_enter">Vui lòng chọn thời gian đến</string>
+    <string name="payment_book_count_customer_must_enter">Vụi lòng chọn số người</string>
+    <string name="payment_book_choose_count_customer">Chọn số người</string>
+    <string name="payment_delivery_info">Thông tin giao hàng</string>
+    <string name="payment_delivery_date_arrival_invalid">Ngày giao hàng phải lớn hơn hoặc bằng ngày hiện tại</string>
+    <string name="payment_delivery_date_time_arrival_invalid">Thời gian giao hàng phải lớn hơn hiện tại</string>
+    <string name="payment_delivery_time_arrival_must_enter">Chưa chọn thời gian giao</string>
+    <string name="payment_delivery_coordinates_must_enter">Toạ độ không được bỏ trống</string>
+    <string name="payment_sum_bill">Tổng hóa đơn</string>
+    <string name="payment_send_require">Gởi yêu cầu tính tiền</string>
+    <string name="payment_see_invoice">Xem hoá đơn</string>
+    <string name="payment_temp_money">Tạm tính</string>
+    <string name="payment_cash_must_more_than_total_money">Số tiền trả phải lớn hơn tiền tạm tính.</string>
+    <string name="payment_send_require_payment_success_message">Gởi yêu cầu tính tiền thành công</string>
+    <string name="payment_delivery_can_wait_to">Có thể chờ đến?</string>
+    <string name="payment_delivery_time_arrive">Thời gian đến</string>
+    <string name="payment_enter_full">Vui lòng điền đầy đủ thông tin</string>
+    <string name="payment_address_is_null">Chưa nhập địa chỉ</string>
+    <string name="payment_enter_order_discount_code">Nhập mã giảm giá khác</string>
+    <string name="payment_enter_discount">Nhập mã giảm giá</string>
+    <string name="payment_loading_coupon">Đang tải danh sách mã giảm giá</string>
+    <string name="payment_get_detail_coupon_fail">Lấy thông tin mã giảm giá thất bại</string>
+    <string name="payment_value_discount">Mã giảm giá của bạn có giá trị</string>
+    <string name="payment_discount_used">Mã giảm giá đã được sử dụng</string>
+    <string name="payment_choose_coupon">Chọn mã giảm giá</string>
+    <string name="payment_list_coupon_of_store_is_empty">Bạn chưa có mã giảm giá cho cửa hàng này</string>
+    <string name="payment_list_coupon_is_empty">Bạn chưa có mã giảm giá</string>
+    <string name="payment_use_coupon_x">Giảm <b>%s</b></string>
+    <string name="payment_use_coupon">Sử dụng mã giảm giá</string>
+    <string name="payment_not_use_coupon">Không sử dụng mã</string>
+    <string name="payment_enter_coupon">Nhập mã giảm giá</string>
+    <string name="payment_enter_count_customer">Chọn số lượng</string>
+    <string name="payment_coupon_invalid">Không tìm thấy mã giảm giá này</string>
+    <string name="payment_enter_cash_description">Nhập vào số tiền bạn trả (Có thể bỏ trống)</string>
+    <string name="payment_cash">Tiền trả</string>
+    <string name="payment_excess_cash">Tiền thừa</string>
+    <string name="payment_order_is_request_billing_can_not_add_food">Không thể gọi thêm món do đã yêu cầu tính tiền</string>
+
+    <!-- string for invoice detail -->
+    <string name="invoice_detail_phone">Điện thoại: %s</string>
+    <string name="invoice_detail_customer">Khách: %s</string>
+    <string name="invoice_detail_cashier">Thu ngân: %s</string>
+    <string name="invoice_detail_shift">Ca: %s</string>
+    <string name="invoice_detail_time_in">Giờ vào: %.5s</string>
+    <string name="invoice_detail_time_out">Giờ ra: %.5s</string>
+    <string name="invoice_detail_table">Bàn: %s</string>
+    <string name="invoice_detail_name_food">Tên món</string>
+    <string name="invoice_detail_quantity">SL</string>
+    <string name="invoice_detail_unit_price">Đơn giá</string>
+    <string name="invoice_detail_price">T.Tiền (Ki)</string>
+    <string name="invoice_detail_sum_order">Tổng</string>
+    <string name="invoice_detail_sum_money">Tổng cộng</string>
+    <string name="invoice_detail_vat">VAT</string>
+    <string name="invoice_detail_discount">Giảm giá</string>
+    <string name="invoice_detail_extra">Phụ thu</string>
+    <string name="invoice_detail_money_received">Nhận (Tiền mặt)</string>
+    <string name="invoice_detail_money_excess">Thừa</string>
+    <string name="invoice_detail_wifi_code">WIFI CODE: %s</string>
+    <string name="invoice_detail_thanks">Cảm ơn và hẹn gặp lại quý khách!</string>
+    <string name="invoice_detail_powered">Phát triển bởi <b>Kaioken.vn</b></string>
+
+    <!-- string for choose coordinates -->
+    <string name="choose_coordinates_getting_location">Đang xác định toạ độ</string>
+
+    <!-- string for process -->
+    <string name="process_status_tracking_send_require">Gởi đơn hàng</string>
+    <string name="process_status_tracking_confirm_require">Xác nhận đơn hàng</string>
+    <string name="process_status_tracking_processing">Đang chế biến</string>
+    <string name="process_status_tracking_serving">Đang phục vụ</string>tôi
+    <string name="process_status_tracking_shipping">Đang giao hàng</string>
+    <string name="process_status_tracking_send_require_payment">Yêu cầu tính tiền</string>
+    <string name="process_status_tracking_send_require_finish">Kết thúc</string>
+    <string name="order_process_chef_cancel">Bếp đã huỷ</string>
+    <string name="process_order_finished_messsage">Đơn hàng của bạn đã được thanh toán. Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi!</string>
+    <string name="process_order_cancel_message">Đơn hàng của bạn đã được huỷ.</string>
+    <string name="process_order_name_and_table"><b>%s</b> - bàn %s</string>
+    <string name="process_get_list_order_fail">Lấy danh sách đặt món thất bại</string>
+
+    <!--string for dialog vote-->
+    <string name="dialog_vote_message">Bạn cho tôi bao nhiêu điểm?</string>
+    <string name="all_thanks">Cảm ơn quý khách!</string>
+    <string name="dialog_vote_question_hint">Có gì làm bạn chưa hài lòng không?</string>
+    <string name="dialog_vote_must_input_score">Bạn vui lòng nhập điểm đánh giá</string>
+
+    <!-- string for detail store -->
+    <string name="detail_store_share_for_friends">Chia sẻ cho bạn bè</string>
+    <string name="detail_store_share_for_friends_sub">Chia sẻ cửa hàng cho bạn bè, Facebook, Zalo</string>
+    <string name="detail_store_share_facebook_title">Facebook</string>
+    <string name="detail_store_share_messenger_title">Messenger</string>
+    <string name="detail_store_time_opening">Thời gian mở cửa</string>
+    <string name="detail_store_description">Mô tả cửa hàng</string>
+
+    <string name="detail_store_click_to_direct">Nhấp vào để xem chỉ đường</string>
+    <string name="detail_store_contact">Liên hệ</string>
+    <string name="detail_store_recruitment">Tuyển dụng</string>
+    <string name="detail_store_recruitment_count">Số lượng cần tuyển</string>
+    <string name="detail_store_recruitment_none">Cửa hàng hiện tại không tuyển thêm nhân viên</string>
+    <string name="detail_store_choose_food">Chọn món</string>
+    <string name="detail_store_order_form_invalid">Cửa hàng chưa kích hoạt tính năng này</string>
+    <string name="detail_store_order_form_invalid_local">Cửa hàng chưa kích hoạt tính năng người dùng tự order và tích điểm\nQuý khách hiện có thể quét mã để xem menu và thông tin khuyến mãi</string>
+    <string name="detail_store_return_home">Quay trở về trang chính</string>
+    <string name="detail_store_follow_fail">Follow thất bại</string>
+    <string name="detail_store_is_openning">Đang mở cửa</string>
+    <string name="detail_store_is_closing">Đã đóng cửa</string>
+    <string name="detail_store_rating">%1$.1f điểm đánh giá</string>
+    <string name="detail_store_share_success">Chia sẻ thành công</string>
+    <string name="detail_store_share_fail">Chia sẻ thất bại</string>
+    <string name="detail_store_see_detail_promotion">Nhấp vào để xem chi tiết khuyến mãi</string>
+    <string name="detail_store_see_detail_promotion_time_from"></string>
+    <string name="detail_store_see_detail_promotion_time_to">đến</string>
+    <string name="detail_store_see_detail_promotion_discount_value">Giảm giá: </string>
+    <string name="detail_store_info_not_set_up">Cửa hàng chưa thiết lập</string>
+    <string name="detail_store_empty_image">Chưa có hình ảnh cửa hàng</string>
+
+    <!--string for require update -->
+    <string name="require_update_title">Phiên bản mới đã sẵn sàng</string>
+    <string name="require_update_update_now">Cập nhật ngay</string>
+
+    <!--string for direction fragment-->
+    <string name="direction_duration">Thời gian: </string>
+    <string name="direction_distance">Khoảng cách: </string>
+
+    <!--string for recruitment-->
+    <string name="recruitment_description_work">Mô tả công việc</string>
+
+    <!--string for comment-->
+    <string name="comment_get_list_empty">Hiện tại chưa có đánh giá cho cửa hàng này\n Hãy trở thành người đánh giá đầu tiên</string>
+    <string name="comment_succes">Gửi bình luận thành công</string>
+    <string name="comment_fail">Gửi bình luận thất bại</string>
+    <string name="comment_send">Gửi bình luận</string>
+    <string name="comment_hint">Nhập nội dung bình luận</string>
+
+    <!--string for promotion-->
+    <string name="promotion_menu_like">Cửa hàng yêu thích</string>
+    <string name="promotion_accumulate">Tích điểm</string>
+    <string name="promotion_book">Đặt hàng</string>
+    <string name="promotion_wallet">Ví của bạn</string>
+    <string name="promotion_menu_notify">Thông báo</string>
+    <string name="promotion_menu_contact">Liên hệ</string>
+    <string name="promotion_menu_history">Lịch sử</string>
+    <string name="promotion_menu_payment">Thanh toán</string>
+    <string name="promotion_menu_settings">Cài đặt</string>
+    <string name="promotion_menu_logout">Đăng xuất</string>
+
+
+    <!--string for map -->
+    <string name="map_get_list_store_no_result_message_no_query">Không tìm thấy kết quả tìm kiếm: <b>%s</b> trong phạm vi <b>%s</b> quanh %s</string>
+    <string name="map_get_list_store_no_result_message_have_query">Không tìm thấy kết quả tìm kiếm: <b>%s</b> có tên \"<b>%s</b>\" trong phạm vi <b>%s</b> quanh %s</string>
+    <string name="map_search_hint">Nhập tên cửa hàng để tìm kiếm...</string>
+    <string name="map_note_search_title">Gợi ý tìm kiếm</string>
+    <string name="map_note_search_content_1"><i>- Tìm quán <b>\"Cafe sỏi đá\"</b> nhập: <b>Cafe sỏi đá (hoặc sỏi đá)</b></i></string>
+    <string name="map_note_search_content_2"><i>- Bạn sẽ đi công tác ở Hà Nội và ở khách sạn tại 154 Xã Đàn cần tìm <b>\"nhà hàng\"</b> gần khách sạn trước: <b>\"nhà hàng - 154 Xã Đàn, Hà Nội\"</b></i></string>
+    <string name="map_note_do_not_show_again">Không hiện lại sau này</string>
+    <string name="map_tab_item_1">Đề xuất</string>
+    <string name="map_tab_item_2">Gần bạn</string>
+    <string name="map_tab_item_3">Yêu thích</string>
+    <string name="map_title_beside_you">CÁC DỊCH VỤ GẦN BẠN</string>
+    <string name="map_filter">Lọc kết quả</string>
+    <string name="map_restaurant_is_opening">Đang mở cửa</string>
+    <string name="map_restaurant_have_kaak">Có dùng Kaak</string>
+    <string name="map_restaurant_have_delivery">Có giao hàng</string>
+    <string name="map_get_list_category_fail">Tải danh sách thể loại thất bại</string>
+    <string name="map_get_list_offer_fail">Tải danh sách gợi ý thất bại</string>
+    <string name="map_get_list_follow_fail">Tải danh sách theo dõi thất bại</string>
+    <string name="map_restaurant_default_distance_text">Bán kính: 500m</string>
+    <string name="map_get_list_city_fail">Tải danh sách thành phố thất bại</string>
+    <string name="map_choose_city">Chọn tỉnh/thành phố</string>
+    <string name="map_expand_area">Mở rộng phạm vi</string>
+    <string name="map_list_follow_empty">Bạn chưa yêu thích cửa hàng nào\nHãy yêu thích cửa hàng để tương tác dễ dàng hơn</string>
+    <string name="map_list_offer_empty">Hiện tại chưa có danh sách gợi ý</string>
+    <string name="map_in_scope">trong phạm vi</string>
+    <string name="map_around">quanh</string>
+    <string name="map_search_around">Tìm quanh</string>
+    <string name="map_search_now">Tìm ngay</string>ten
+    <string name="map_search_name_store">Tìm kiếm tên cửa hàng</string>
+    <string name="map_search_description_category">Chọn loại cửa hàng để tìm kiếm nhanh</string>
+    <string name="map_search_radius">Bán kính</string>
+    <string name="map_scope_is_max">Đang ở phạm vi tối đa, không thể mở rộng thêm được nữa</string>
+    <string name="map_item_bottom_navigate_store">Cửa hàng</string>
+    <string name="map_item_bottom_navigate_qr_scan">Quét mã</string>
+    <string name="map_item_bottom_navigate_order">Đơn hàng</string>
+    <string name="map_item_bottom_navigate_ki">Ví Ki</string>
+    <string name="map_item_bottom_navigate_profile">Hồ sơ</string>
+
+    <!-- string for track  -->
+    <string name="track_order_type_use_local">Dùng tại quán</string>
+    <string name="track_order_type_use_book">Đặt bàn lúc %1$02d:%2$02d ngày %3$d tháng %4$d</string>
+    <string name="track_order_type_use_book_unknow">Đặt bàn</string>
+    <string name="track_order_type_use_delivery_now">Giao hàng trước %1$02d:%2$02d</string>
+    <string name="track_order_type_use_delivery">Giao hàng trước %1$02d:%2$02d ngày %3$d tháng %4$d</string>
+    <string name="track_order_type_use_delivery_unknow">Giao hàng</string>
+    <string name="track_order_call_to_store">Gọi cho cửa hàng</string>
+    <string name="track_order_track_shiper">Vị trí người giao</string>
+    <string name="track_order_get_list_ordering_fail">Tải danh sách đơn hàng thất bại</string>
+    <string name="track_order_empty">Bạn chưa có đơn hàng nào cả.</string>
+    <string name="track_order_notice_empty">Bạn chưa có thông báo nào cả.</string>
+    <string name="track_order_get_list_notice_fail">Tải danh sách thông báo thất bại</string>
+    <string name="track_order_notice_seen">Đã đọc</string>
+    <string name="track_order_delete_fail">Xoá thất bại</string>
+
+    <!-- string for notification -->
+    <string name="notification_just_get_coupon">Bạn vừa nhận được mã giảm giá</string>
+    <string name="notification_format_content"><b>%s</b> %s</string>
+    <string name="notification_get_info_coupon_fail">Lấy thông tin mã giảm giá thất bại</string>
+
+    <!-- string for finance -->
+    <string name="finance_watch_via_month">Xem theo tháng</string>
+    <string name="finance_watch_via_year">Xem theo năm</string>
+    <string name="finance_watch_via_day">Xem theo ngày</string>
+    <string name="finance_enter_max_money_limit">Nhập hạn mức tối đa</string>
+    <string name="finance_money_limit_in_month">Hạn mức chi/tháng</string>
+    <string name="finance_get_money">Thu</string>
+    <string name="finance_spent_money">Chi</string>
+    <string name="finance_loan">Cho vay</string>
+    <string name="finance_debt">Nợ</string>
+    <string name="finance_choose_form">Chọn hình thức</string>
+    <string name="finance_you_have_not_to_select_difference_from_today">Không thể chọn ngày khác hôm nay</string>
+    <string name="finance_add_money">Thêm khoản thu/chi</string>
+    <string name="finance_date_booked">Ngày đặt</string>
+    <string name="finance_date_completed">Ngày hoàn thành</string>
+
+    <!-- string for register -->
+    <string name="register_confirm_password">Nhập lại mật khẩu</string>
+    <string name="register_try_again">Thử lại sau 60 giây</string>
+    <string name="register_send_again">Gửi lại</string>
+    <string name="register_type_OTP_code_from_SMS">Nhập mã xác thực bạn nhận được từ SMS</string>
+    <string name="register_phone_number_invalid">Số điện thoại không hợp lệ</string>
+    <string name="register_this_otp_is_new_password">Mã OTP này chính là mật khẩu mới của bạn</string>
+    <string name="register_password_must_more_6_characters">Mật khẩu phải nhiều hơn 6 ký tự</string>
+    <string name="register_invalid_otp">Mã OTP không hợp lệ</string>
+    <string name="register_invalid_otp_cause_length">Mã OTP phải nhập đầy đủ 6 số</string>
+    <string name="register_try_again_after_x_seconds">Thử lại sau %d giây</string>
+    <string name="register_can_not_send_otp">Không thể gởi mã xác nhận đến số điện thoại này</string>
+    <string name="register_phone_is_exist">Số điện thoại này đã tồn tại trong hệ thống</string>
+    <string name="register_description">Đăng ký tài khoản mới</string>
+
+    <!-- string for login -->
+    <string name="login_fail_message">Đăng nhập thất bại</string>
+    <string name="login_this_otp_is_new_password">Mã OTP này chính là mật khẩu mới của bạn</string>
+    <string name="login_forgot_password">Quên mật khẩu?</string>
+    <string name="login_phone_number">Số điện thoại</string>
+    <string name="login_must_enter_phone_number">Vui lòng nhập số điện thoại</string>
+
+    <!--string for forgot password-->
+    <string name="forgot_password_send_confirm_code">Gửi mã xác nhận</string>
+    <string name="forgot_password_confirm_code_will_sent_to_sms">Mã xác nhận sẽ được gởi đến tin nhắn.</string>
+    <string name="forgot_password_save_new_password">Đặt lại mật khẩu</string>
+
+    <!--string for update profile activity-->
+    <string name="update_profile_update_avatar">Cập nhật ảnh đại diện</string>
+    <string name="update_profile_update_cover">Cập nhật ảnh bìa</string>
+    <string name="update_profile_get_user_info_fail">Lấy thông tin người dùng thất bại</string>
+    <string name="update_profile_success">Cập nhật thông tin thành công</string>
+    <string name="update_profile_fail">Cập nhật thông tin thất bại</string>
+    <string name="update_profile_update_password_success">Đổi mật khẩu thành công</string>
+    <string name="update_profile_update_password_fail">Đổi mật khẩu thất bại</string>
+    <string name="update_profile_must_enter_name">Bạn bắt buộc phải nhập tên hiển thị</string>
+    <string name="update_profile_avatar_success">Cập nhật ảnh đại diện thành công</string>
+    <string name="update_profile_avatar_fail">Cập nhật ảnh đại diện thất bại</string>
+    <string name="update_profile_cover_success">Cập nhật ảnh bìa thành công</string>
+    <string name="update_profile_cover_fail">Cập nhật ảnh bìa thất bại</string>
+    <string name="update_profile_old_password">Mật khẩu cũ</string>
+    <string name="update_profile_new_password">Mật khẩu mới</string>
+
+    <!--string for print-->
+    <string name="print_disconnect">Đã ngắt kết nối với máy in</string>
+    <string name="print_success">In thanh cong</string>
+    <string name="print_not_yet_connected">Chưa kết nối với máy in</string>
+    <string name="print_fail">In thất bại</string>
+    <string name="print_thanks">Cam on va hen gap lai quy khach!</string>
+    <string name="print_address">Dia chi:</string>
+    <string name="print_date">Ngay:</string>
+    <string name="print_time">Gio:</string>
+    <string name="print_bill_no">So HD:</string>
+    <string name="print_table">Ban: </string>
+    <string name="print_customer">Khach:</string>
+    <string name="print_cashier">Thu ngan:</string>
+    <string name="print_priceBefore">Tong:</string>
+    <string name="print_discount">Giam gia:</string>
+    <string name="print_surcharge">Phu thu:</string>
+    <string name="print_vat">VAT:</string>
+    <string name="print_priceAfter">Tong cong:</string>
+    <string name="print_receive">Nhan:</string>
+    <string name="print_excess">Tien thua:</string>
+
+    <!--months-->
+    <string name="january">Tháng 1</string>
+    <string name="february">Tháng 2</string>
+    <string name="march">Tháng 3</string>
+    <string name="april">Tháng 4</string>
+    <string name="may">Tháng 5</string>
+    <string name="june">Tháng 6</string>
+    <string name="july">Tháng 7</string>
+    <string name="august">Tháng 8</string>
+    <string name="september">Tháng 9</string>
+    <string name="october">Tháng 10</string>
+    <string name="november">Tháng 11</string>
+    <string name="december">Tháng 12</string>
+
+    <!--string for list distance search-->
+    <string-array name="distance_search_text">
+        <item>500m</item>
+        <item>1km</item>
+        <item>3km</item>
+        <item>5km</item>
+        <item>10km</item>
+        <item>50km</item>
+    </string-array>
+
+    <!-- string for step order local-->
+    <string-array name="step_order_local">
+        <item>Xác nhận</item>
+        <item>Chế biến</item>
+        <item>Phục vụ</item>
+        <item>Yêu cầu\ntính tiền</item>
+        <item>Kết thúc</item>
+    </string-array>
+
+    <string-array name="step_order_delivery">
+        <item>Xác nhận</item>
+        <item>Chế biến</item>
+        <item>Đang giao</item>
+        <item>Kết thúc</item>
+    </string-array>
+
+    <string-array name="quick_call_waiter">
+        <item>Cho trà đá</item>
+        <item>Gọi dọn bàn</item>
+        <item>Tính tiền</item>
+        <item>Xin pass wifi</item>
+        <item>Gọi tâm sự</item>
+        <item>Khác...</item>
+    </string-array>
+
+    <string-array name="error_code">
+        <item>0|Mặc định</item>
+        <item>1|Mặc định</item>
+        <item>-1|Lỗi - Không lưu được dữ liệu</item>
+        <item>-2|Lỗi - Không xóa được dữ liệu</item>
+        <item>-10|Hệ thống đang được bảo trì, nâng cấp một số tính năng. Các bạn vui lòng quay lại sau ít phút.</item>
+        <item>10|Invalid Params 1</item>
+        <item>100|Invalid Request</item>
+        <item>101|Vui lòng nâng cấp phiên bản. Bạn phải tạo tài khoản mới có thể đăng nhập</item>
+        <item>102|Bạn không có quyền cho tác vụ này</item>
+        <item>404|Không xử lý được yêu cầu</item>
+        <item>1000|Session không tồn tại</item>
+        <item>1001|Session đã expired</item>
+        <item>1002|Session đã expired</item>
+        <item>1100|Không tồn tại đơn hàng</item>
+        <item>1200|Không tồn tại cửa hàng này 1</item>
+        <item>1201|Follow không thành công</item>
+        <item>1202|Unfollow không thành công</item>
+        <item>1203|Lỗi - Không active/deactive được cửa hàng này</item>
+        <item>1204|Bạn đã bình luận rồi</item>
+        <item>1205|Lỗi - Lưu Comment không thành công</item>
+        <item>1206|Lỗi - Bạn không phải chủ cửa hàng này</item>
+        <item>1207|Lỗi - Không tìm thấy cài đặt khoảng cách</item>
+        <item>1208|Lỗi - Không tìm thấy cài đặt wifi</item>
+        <item>1209|Lỗi - Không tìm thấy cài đặt ca làm việc</item>
+        <item>1210|Lỗi - Cửa hàng này đang trong quá trình duyệt</item>
+        <item>1211|Lỗi - Cửa hàng này đã được duyệt rồi</item>
+        <item>1212|Lỗi - Cửa hàng này đã bị từ chối duyệt</item>
+        <item>1213|Vị trí của bạn đang nằm ngoài cửa hàng- Vui lòng vào cửa hàng để đặt món</item>
+        <item>1214|Lỗi - Cửa hàng này đã bị xóa</item>
+        <item>1215|Lỗi - Cửa hàng này đã bị khóa</item>
+        <item>1216|Vui lòng cập nhật thông tin về 1</item>
+        <item>1300|Tài khoản không tồn tại trong hệ thống</item>
+        <item>1301|Lỗi - Lưu User không thành công</item>
+        <item>1302|Invalid Admin User</item>
+        <item>1303|Invalid Permission</item>
+        <item>1304|User Profile Invalid</item>
+        <item>1305|Lỗi - Sai định dạng email</item>
+        <item>1306|Nhập lại mật khẩu mới không đúng</item>
+        <item>1307|Mật khẩu không đúng!</item>
+        <item>1308|Số điện thoại không trùng khớp!</item>
+        <item>1309|Tài khoản này đã đăng ký rồi</item>
+        <item>1310|Tài khoản này đã tồn tại trong hệ thống</item>
+        <item>1311|Bạn đã đánh giá đơn hàng này</item>
+        <item>1400|Vui lòng hoàn tất các đơn hàng liên quan trước khi chỉnh sửa khu vực</item>
+        <item>1401|Lỗi - Tạo/chỉnh sửa khu vực không thành công</item>
+        <item>1402|Lỗi - Lưu bàn không thành công</item>
+        <item>1403|Không tồn tại khu vực này</item>
+        <item>1404|Không tồn tại bàn này</item>
+        <item>1500|Lỗi - Lưu hình không thành công</item>
+        <item>1501|Hình này không tồn tại trong hệ thống</item>
+        <item>1600|Không tồn tại menu item này</item>
+        <item>1601|Menu mẫu này đã tồn tại</item>
+        <item>1602|Category Menu này không tồn tại</item>
+        <item>1603|Category Menu này đã tồn tại</item>
+        <item>1604|Menu item này đã tồn tại</item>
+        <item>1700|Không tồn tại phòng này</item>
+        <item>1701|Phòng mẫu này đã tồn tại</item>
+        <item>1800|Không tồn tại bộ phận này</item>
+        <item>1801|Lỗi - Lưu bộ phận không thành công</item>
+        <item>1900|Không tìm thấy yêu cầu kết bạn này</item>
+        <item>1901|Lỗi -Không lưu được</item>
+        <item>1902|Không tìm thấy mối quan hệ bạn bè này</item>
+        <item>2000|Group này đã tồn tại</item>
+        <item>2001|Không lưu được group này</item>
+        <item>2002|Group này không tồn tại</item>
+        <item>2003|Bạn không phải admin nhóm này</item>
+        <item>2004|Đã tồn tại user này trong group</item>
+        <item>2005|Yêu cầu tham gia nhóm không tồn tại</item>
+        <item>2006|Không tồn tại user này trong nhóm</item>
+        <item>2100|Đã tồn tại ngày lễ này</item>
+        <item>2200|Invalid k_id</item>
+        <item>2201|Không tồn tại Kpay của User này</item>
+        <item>2300|Không tìm thấy nhà cung cấp này</item>
+        <item>2301|Không tìm thấy nguyên liệu này</item>
+        <item>2302|Đã tồn tại khách hàng này trong hệ thống</item>
+        <item>2303|Không tồn tại khách hàng này trong hệ thống</item>
+        <item>2304|Không tồn tại mặt hàng này</item>
+        <item>2305|Mã hàng này đã tồn tại</item>
+        <item>2306|Không đủ khối lượng () trong kho</item>
+        <item>2307|Không tìm thấy liên kết thực đơn này</item>
+        <item>2308|Mã đơn vị này đã tồn tại</item>
+        <item>2400|Ca 1 đã bắt đầu và chưa kết thúc</item>
+        <item>2401|Ca 1 đã bắt đầu và đã kết thúc</item>
+        <item>2402|Phải kết thúc ca 1 trước khi bắt đầu ca làm việc mới</item>
+        <item>2403|Cửa hàng này chưa cài đặt làm việc theo ca</item>
+        <item>2404|Số ca làm việc đã đạt ngưỡng cài đặt</item>
+        <item>2405|Ca này không tồn tại</item>
+        <item>2406|Bạn không phải là người bắt đầu ca làm việc này</item>
+        <item>2500|Không tồn tại chiến dịch mã giảm giá này</item>
+        <item>2501|Không tìm thấy mã giảm giá này</item>
+        <item>2502|Danh sách khách hàng rỗng</item>
+        <item>2503|Không tồn tại khuyến mãi này</item>
+        <item>2505|Mã giảm giá đã sử được sử dụng trước đó</item>
+        <item>2600|Tài khoản đã bị tạm khóa tính năng gửi OTP do vi phạm chính sách</item>
+        <item>2601|Tài khoản đã bị khóa tính năng gửi OTP do vi phạm chính sách</item>
+        <item>2602|Mã OTP không tồn tại</item>
+        <item>2603|Mã OTP không hợp lệ</item>
+        <item>6400|Mã giảm giá không hợp lệ</item>
+        <item>6601|Nhân viên này đang bị tạm khoá</item>
+        <item>6600|Không tồn tại nhân viên này</item>
+        <item>2800|Không tồn tại nhân viên này</item>
+        <item>2800|Không tồn tại nhân viên này</item>
+        <item>5120|Đơn hàng này chưa được nhân viên xác nhận</item>
+        <item>5406|Vui lòng Reset Bàn này về trạng thái trống</item>
+        <item>2900|Không tồn tại tin tức này</item>
+        <item>3000|Không tồn tại hướng dẫn này</item>
+        <item>103|Tên của bạn không được bắt đầu bằng Kaio</item>
+        <item>104|Tên này nằm trong danh sách từ chối. Vui lòng đặt tên khác</item>
+        <item>1003|Refresh Token không tồn tại</item>
+        <item>1004|Refresh Token đã hết hạn do đăng nhập bằng phiên khác</item>
+
+    </string-array>
+</resources>
